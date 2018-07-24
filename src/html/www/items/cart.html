@@ -1,0 +1,31 @@
+<ion-view view-title="Ma liste">
+  <ion-content>
+
+      <ion-refresher on-refresh="onRefresh()">
+      </ion-refresher>
+
+      <div class="list list-inset">
+          <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" ng-model="q"  placeholder="{{'Recherche'|translate}}">
+      </label>
+      </div>
+
+      <div ng-class="list" ng-repeat="item in myItems | filter:{title: q} ">
+          <div class="item item-body item-items" ng-if="item.active">
+              <img class="full-image" fd-image-src="{{item.image_id}}" ng-if="item.image_id">
+
+              <div ng-click="toggleDesc(item)">
+                  <p class="fd-title">{{item.title}}</p>
+
+                  <p class="fd-desc" ng-class="{'fd-desc-full': item.fullDesc }" ng-bind-html="item.descEncode"></p>
+                  <p class="fd-status">{{availableMessage(item)}}</p>
+              </div>
+          </div>
+          <div class="item text-center" ng-if="UserManaged">
+              <div class="button button-block" ng-if="item.with_planning" ng-click="showPlanning($index)" translate>Prendre un rendez-vous</div>
+              <button class="text-button" ng-click="removeItem($index)" translate>Retirer de ma liste</button>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

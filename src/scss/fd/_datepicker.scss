@@ -1,0 +1,156 @@
+
+.ionic_datepicker_popup {
+
+  .today {
+    font-weight: bold;
+    border: 0px;
+  }
+
+  .popup-head {
+    background-color: $bar-default-bg;
+
+    .popup-title {
+      color: $bar-default-text;
+    }
+
+    .popup-sub-title {
+      color: $bar-default-text;
+    }
+
+  }
+
+  .popup {
+    width: 80%;
+  }
+
+  .selected_date {
+    background-color: $button-default-bg;
+    color: $button-default-text;
+    border-radius: 0px;
+  }
+
+
+  .popup-body {
+
+    background-color: $modal-bg-color;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .selected_date_full {
+      background-color: $bar-default-bg;
+      color: $bar-default-text;
+      height: 55px;
+      padding-top: 5px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .pointer_events_none {
+      color: #aaaaaa !important;
+    }
+
+
+    .month_select, .year_select {
+      border: $button-default-border;
+      background-color: $button-default-bg;
+      color: $button-default-text;
+
+      &:after {
+        background-color: $button-default-bg;
+        color: $button-default-text;
+      }
+
+      select {
+        background-color: $button-default-bg;
+        color: $button-default-text;
+      }
+
+    }
+
+  }
+
+   .popup-body .button-clear {
+    color: $base_color;
+  }
+
+  .popup-buttons button {
+    background-color: $button-default-bg;
+    color: $button-default-text;
+  }
+}
+
+.ionic_datepicker_modal {
+
+  // .ionic_datepicker_modal_content {
+  //   background-color: $item-default-bg;
+  //   color: $item-default-text;
+  // }
+
+  & .header, & .footer {
+    background-color: $bar-default-bg;
+    color: $bar-default-text;
+  }
+
+  & .header .title, & .header .button, & .footer .title, & .footer .button {
+    color: $bar-default-text;
+  }
+
+  .today {
+    border: 1px solid $item-default-text;
+  }
+
+  .selected_date {
+    color: $item-default-bg;
+    background-color: $item-default-text;
+  }
+
+  .pointer_events_none {
+    color: #aaaaaa !important;
+  }
+
+  .button-clear {
+    color: $bar-default-text;
+    background-color: $bar-default-bg;
+    border-color: $bar-default-border;
+  }
+
+  .month_select, & .year_select {
+    border-bottom: 1px solid $modal-bg-color;
+  }
+
+  .month_select:after, & .year_select:after {
+    color: $modal-bg-color;
+  }
+
+
+}
+
+
+.popup-pick {
+  .popup-head {
+    display: none;
+  }
+
+  .popup-buttons {
+      @include flex-direction(column);
+      padding: 0px;
+
+      .button {
+        margin: 5px 5px 5px 5px;
+
+      }
+  }
+
+}
+
+
+
+
+.fd-camera {
+
+  .fd-camera-img {
+    width: 100%;
+  }
+}

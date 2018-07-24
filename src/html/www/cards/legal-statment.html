@@ -1,0 +1,26 @@
+<ion-modal-view ng-controller="LegalStatementCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Description du programme</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <div ng-class="list" ng-click="closeModal()">
+      <div class='item item-body'>
+        <div ng-show="card.program.description">
+          <h2 translate>Description du programme</h2>
+          <p ng-bind-html="card.program.description.textEncode()" ></p>
+        </div>
+        <h2 class="fd-cond" translate>Conditions d'utilisation</h2>
+        <p ng-bind-html="card.program.legal_statement.textEncode() || defaultLegalStatement"></p>
+
+
+        <div class="padding" style="margin-top:20px">
+          <button class="button button-block" ng-click="closeModal()">OK</button>
+        </div>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+</ion-modal-view>

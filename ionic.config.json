@@ -1,0 +1,24 @@
+{
+  "name": "fidelisa",
+  "app_id": "d7aa5608",
+  "gulpStartupTasks": [
+    "watch",
+    "build-all"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ],
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  }
+}

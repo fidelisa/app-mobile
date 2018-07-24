@@ -1,0 +1,898 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: controllers/admin/home_ctrl.js:6
+msgid "Administration"
+msgstr ""
+
+#: www/registration.html:69
+msgid "Adresse"
+msgstr ""
+
+#: www/registration.html:71
+msgid "Adresse 1"
+msgstr ""
+
+#: www/registration.html:74
+msgid "Adresse 2"
+msgstr ""
+
+#: www/items/_list.html:32
+msgid "Afficher plus"
+msgstr ""
+
+#: www/forums/new.html:17
+msgid "Ajouter votre message"
+msgstr ""
+
+#: www/items/_list.html:26
+msgid "Ajouter à ma liste"
+msgstr ""
+
+#: www/appointment/list.html:29
+#: www/happenings/0/_detail.html:48
+#: www/happenings/0/_detail.html:53
+#: www/happenings/1/_detail.html:84
+#: www/happenings/1/_detail.html:89
+msgid "Ajouter à mon calendrier"
+msgstr ""
+
+#: controllers/items_ctrl.js:77
+msgid "Ajouté dans votre liste."
+msgstr ""
+
+#: www/newpass.html:12
+msgid "Ancien mot de passe"
+msgstr ""
+
+#: controllers/profile_ctrl.js:123
+msgid "Ancien mot de passe incorrect"
+msgstr ""
+
+#: controllers/appointment_schedule_ctrl.js:54
+#: controllers/gift_ctrl.js:36
+#: controllers/happenings_ctrl.js:184
+#: controllers/happenings_ctrl.js:225
+#: controllers/happenings_ctrl.js:244
+#: controllers/happenings_detail_ctrl.js:159
+#: controllers/happenings_new_ctrl.js:98
+#: controllers/profile_ctrl.js:35
+#: controllers/registration_ctrl.js:183
+#: controllers/registration_ctrl.js:225
+#: controllers/registration_ctrl.js:272
+#: controllers/registration_ctrl.js:338
+#: directives/pickers.js:163
+#: directives/pickers.js:60
+#: directives/selectors.js:46
+#: directives/tags.js:103
+#: www/appointment/_new.html:41
+#: www/dev-mode.html:40
+#: www/happenings/0/_new.html:55
+#: www/happenings/1/_new.html:55
+#: www/newpass.html:25
+#: www/registration.html:118
+#: www/survey.html:42
+msgid "Annuler"
+msgstr ""
+
+#: www/dev-mode.html:8
+msgid "App config"
+msgstr ""
+
+#: controllers/forums_categories_ctrl.js:59
+#: www/places/list.html:17
+#: www/tag/list.html:13
+#: www/tag/popup.html:2
+msgid "Aucun"
+msgstr ""
+
+#: www/happenings/1/_list.html:39
+msgid "Aucun déjeuner pour l'instant"
+msgstr ""
+
+#: www/messages/_list.html:19
+msgid "Aucun message pour l'instant"
+msgstr ""
+
+#: www/sponsorship.html:58
+msgid "Aucun parrainage disponible"
+msgstr ""
+
+#: www/happenings/0/_participants.html:3
+#: www/happenings/1/_participants.html:4
+msgid "Aucun participant pour l'instant"
+msgstr ""
+
+#: www/appointment/schedule.html:21
+msgid "Aucun rendez-vous disponible"
+msgstr ""
+
+#: www/happenings/0/_list.html:39
+msgid "Aucun événement pour l'instant"
+msgstr ""
+
+#: controllers/game_ctrl.js:42
+msgid "Bravo, vous avez gagné !"
+msgstr ""
+
+#: www/registration.html:62
+msgid "Centres d'intérêts"
+msgstr ""
+
+#: www/partials/0/sign-up.html:32
+#: www/partials/1/sign-up.html:29
+#: www/profile.html:31
+msgid "Changer de langue"
+msgstr ""
+
+#: www/newpass.html:9
+#: www/profile.html:27
+msgid "Changer de mot de passe"
+msgstr ""
+
+#: controllers/registration_ctrl.js:336
+msgid "Choisir une photo"
+msgstr ""
+
+#: www/appointment/_new.html:22
+msgid "Choisissez votre horaire"
+msgstr ""
+
+#: www/registration.html:77
+msgid "Code postal"
+msgstr ""
+
+#: www/survey.html:22
+msgid "Comment évaluez-vous les points suivants ?"
+msgstr ""
+
+#: controllers/happenings_ctrl.js:125
+#: controllers/happenings_detail_ctrl.js:78
+msgid "Complet"
+msgstr ""
+
+#: www/cards/legal-statment.html:13
+msgid "Conditions d'utilisation"
+msgstr ""
+
+#: www/newpass.html:18
+msgid "Confirmation"
+msgstr ""
+
+#: www/registration.html:107
+msgid "Confirmation mot de passe"
+msgstr ""
+
+#: www/appointment/list.html:18
+msgid "Confirmé le {{secureDate(appointment.validated_at, \"shortDate\", appointment.timezone)}}"
+msgstr ""
+
+#: www/partials/0/sign-up.html:18
+#: www/partials/0/sign-up.html:5
+#: www/partials/1/sign-up.html:16
+msgid "Connexion"
+msgstr ""
+
+#: www/partials/0/sign-up.html:24
+#: www/partials/1/sign-up.html:22
+msgid "Connexion via Facebook"
+msgstr ""
+
+#: controllers/admin/contact_ctrl.js:6
+msgid "Contact"
+msgstr ""
+
+#: controllers/admin/contacts_ctrl.js:4
+msgid "Contacts"
+msgstr ""
+
+#: controllers/happenings_new_ctrl.js:28
+msgid "Création"
+msgstr ""
+
+#: controllers/appointment_schedule_ctrl.js:52
+#: controllers/happenings_ctrl.js:182
+#: controllers/registration_ctrl.js:270
+#: directives/pickers.js:158
+#: directives/pickers.js:58
+#: www/happenings/0/_list.html:17
+#: www/happenings/0/_new.html:28
+#: www/happenings/1/_list.html:17
+#: www/happenings/1/_new.html:28
+msgid "Date"
+msgstr ""
+
+#: www/contact.html:8
+msgid "De"
+msgstr ""
+
+#: www/happenings/0/_new.html:15
+#: www/happenings/1/_new.html:15
+msgid "Description"
+msgstr ""
+
+#: www/cards/legal-statment.html:10
+#: www/cards/legal-statment.html:3
+#: www/cards/list.html:27
+msgid "Description du programme"
+msgstr ""
+
+#: www/dev-mode.html:3
+#: www/partials/0/sign-up.html:34
+#: www/partials/1/sign-up.html:31
+msgid "DevMode"
+msgstr ""
+
+#: www/happenings/0/_new.html:34
+#: www/happenings/1/_new.html:34
+msgid "Durée"
+msgstr ""
+
+#: www/happenings/0/_detail.html:13
+#: www/happenings/0/_list.html:55
+#: www/happenings/1/_detail.html:17
+#: www/happenings/1/_list.html:55
+msgid "Durée : {{happening.duration | mintohours}}"
+msgstr ""
+
+#: controllers/profile_ctrl.js:33
+#: controllers/profile_ctrl.js:37
+#: www/profile.html:20
+msgid "Déconnexion"
+msgstr ""
+
+#: controllers/game_ctrl.js:44
+msgid "Désolé, vous avez perdu."
+msgstr ""
+
+#: www/appointment/_new.html:33
+msgid "Détails"
+msgstr ""
+
+#: www/appointment/list.html:19
+msgid "En attente"
+msgstr ""
+
+#: www/survey.html:3
+msgid "Enquête satisfaction"
+msgstr ""
+
+#: www/forms/_detail.html:27
+msgid "Enregistrer"
+msgstr ""
+
+#: www/cards/points.html:3
+msgid "Enregistrer des points"
+msgstr ""
+
+#: www/appstores.html:18
+#: www/stores.html:16
+msgid "Enrichissez votre expérience avec notre application gratuite"
+msgstr ""
+
+#: www/contact.html:21
+msgid "Envoyer"
+msgstr ""
+
+#: www/admin/message.html:14
+msgid "Envoyer le message"
+msgstr ""
+
+#: controllers/admin/message_ctrl.js:5
+#: factories/admin_resources.js:48
+msgid "Envoyer un message"
+msgstr ""
+
+#: controllers/registration_ctrl.js:302
+msgid "Femme"
+msgstr ""
+
+#: controllers/game_ctrl.js:46
+#: www/forms/_detail.html:5
+#: www/gains/show.html:14
+msgid "Fermer"
+msgstr ""
+
+#: controllers/forms_detail_ctrl.js:53
+msgid "Formulaire"
+msgstr ""
+
+#: controllers/gift_ctrl.js:34
+#: www/gains/show.html:3
+msgid "Gain"
+msgstr ""
+
+#: www/survey.html:16
+msgid "Globalement, diriez-vous que vous êtes..."
+msgstr ""
+
+#: www/happenings/0/_new.html:31
+#: www/happenings/1/_new.html:31
+msgid "Heure"
+msgstr ""
+
+#: controllers/registration_ctrl.js:301
+msgid "Homme"
+msgstr ""
+
+#: www/appointment/schedule.html:8
+msgid "Horaires"
+msgstr ""
+
+#: www/registration.html:12
+msgid "Identifiant"
+msgstr ""
+
+#: controllers/menu_ctrl.js:113
+msgid "Il y a 1 heure"
+msgstr ""
+
+#: controllers/menu_ctrl.js:109
+msgid "Il y a 1 minute"
+msgstr ""
+
+#: controllers/menu_ctrl.js:118
+msgid "Il y a {{d}} jours"
+msgstr ""
+
+#: controllers/menu_ctrl.js:114
+msgid "Il y a {{h}} heures"
+msgstr ""
+
+#: controllers/menu_ctrl.js:110
+msgid "Il y a {{m}} minutes"
+msgstr ""
+
+#: controllers/menu_ctrl.js:121
+msgid "Il y a {{w}} semaines"
+msgstr ""
+
+#: controllers/happenings_ctrl.js:127
+#: controllers/happenings_detail_ctrl.js:80
+#: controllers/happenings_new_ctrl.js:13
+#: controllers/happenings_new_ctrl.js:16
+msgid "Illimité"
+msgstr ""
+
+#: www/partials/1/sign-up.html:9
+msgid "Indiquez votre e-mail"
+msgstr ""
+
+#: www/registration.html:85
+msgid "Informations complémentaires"
+msgstr ""
+
+#: www/registration.html:33
+msgid "Informations personnelles"
+msgstr ""
+
+#: www/partials/0/sign-up.html:27
+#: www/partials/1/sign-up.html:25
+#: www/registration.html:9
+msgid "Inscription"
+msgstr ""
+
+#: www/happenings/0/_list.html:6
+#: www/happenings/1/_list.html:6
+msgid "J'ai créé"
+msgstr ""
+
+#: www/registration.html:23
+msgid "Je m'inscris avec avec mon e-mail"
+msgstr ""
+
+#: www/happenings/0/_detail.html:49
+#: www/happenings/1/_detail.html:85
+msgid "Je ne participe plus"
+msgstr ""
+
+#: www/happenings/0/_detail.html:27
+#: www/happenings/0/_detail.html:47
+#: www/happenings/0/_list.html:10
+#: www/happenings/0/_list.html:69
+#: www/happenings/1/_list.html:10
+#: www/happenings/1/_list.html:69
+msgid "Je participe"
+msgstr ""
+
+#: controllers/cards_ctrl.js:228
+msgid ""
+"Je vous recommande\n"
+"      {{ownerTitle}}\n"
+"      {{ownerUrl}}\n"
+"      En venant de ma part, vous profiterez de\n"
+"      {{sponsoredGift}}.\n"
+"      Pour bénéficier de votre cadeau, inscrivez-vous en suivant ce lien\n"
+"      {{promoUrlCode}}"
+msgstr ""
+
+#: www/game.html:34
+msgid "Jeu valable jusqu'au {{date}}"
+msgstr ""
+
+#: www/game.html:30
+msgid "Jouer"
+msgstr ""
+
+#: www/game.html:15
+msgid "Jouez à notre jeu"
+msgstr ""
+
+#: www/survey.html:25
+msgid "L'accueil"
+msgstr ""
+
+#: controllers/signup_ctrl.js:25
+msgid "L'identification n'a pas été possible,          veuillez vérifier votre saisie"
+msgstr ""
+
+#: www/survey.html:27
+msgid "La relation"
+msgstr ""
+
+#: controllers/forms_detail_ctrl.js:54
+msgid "Le formulaire est introuvable"
+msgstr ""
+
+#: controllers/admin/message_ctrl.js:24
+msgid "Le message a été envoyé."
+msgstr ""
+
+#: controllers/profile_ctrl.js:125
+msgid "Le mot de passe de confirmation est incorrect"
+msgstr ""
+
+#: controllers/signup_ctrl.js:18
+msgid "Le mot de passe incorrect"
+msgstr ""
+
+#: controllers/profile_ctrl.js:131
+msgid "Le mot de passe {{pass}}"
+msgstr ""
+
+#: www/survey.html:29
+msgid "Le rapport qualité/prix"
+msgstr ""
+
+#: www/registration.html:111
+msgid "Les zones indiquant le symbole * sont obligatoires"
+msgstr ""
+
+#: www/happenings/0/_new.html:23
+msgid "Lieu de l'événement"
+msgstr ""
+
+#: www/happenings/1/_new.html:23
+msgid "Lieu du déjeuner"
+msgstr ""
+
+#: controllers/happenings_ctrl.js:242
+#: controllers/happenings_ctrl.js:265
+#: controllers/happenings_new_ctrl.js:96
+#: controllers/registration_ctrl.js:181
+#: controllers/registration_ctrl.js:223
+#: www/happenings/0/_list.html:25
+#: www/happenings/1/_list.html:25
+#: www/places/list.html:3
+msgid "Lieux"
+msgstr ""
+
+#: www/happenings/0/_detail.html:54
+#: www/happenings/1/_detail.html:90
+msgid "Liste des participants"
+msgstr ""
+
+#: controllers/contact_ctrl.js:19
+msgid "Merci pour votre message."
+msgstr ""
+
+#: www/cards/list.html:35
+msgid "Mes gains disponibles"
+msgstr ""
+
+#: controllers/forums_categories_ctrl.js:8
+msgid "Mes posts"
+msgstr ""
+
+#: controllers/profile_ctrl.js:60
+msgid "Mode développeur activé"
+msgstr ""
+
+#: controllers/profile_ctrl.js:62
+msgid "Mode développeur désactivé"
+msgstr ""
+
+#: controllers/happenings_new_ctrl.js:34
+msgid "Modification"
+msgstr ""
+
+#: www/happenings/0/_detail.html:55
+#: www/happenings/1/_detail.html:91
+msgid "Modifier"
+msgstr ""
+
+#: www/profile.html:17
+msgid "Modifier mon profil"
+msgstr ""
+
+#: www/partials/0/sign-up.html:14
+#: www/partials/1/sign-up.html:12
+#: www/registration.html:103
+msgid "Mot de passe"
+msgstr ""
+
+#: www/partials/0/sign-up.html:31
+#: www/partials/1/sign-up.html:28
+msgid "Mot de passe oublié"
+msgstr ""
+
+#: www/registration.html:35
+msgid "Nom"
+msgstr ""
+
+#: controllers/happenings_new_ctrl.js:19
+msgid "Nombre de participants"
+msgstr ""
+
+#: www/appointment/_new.html:26
+msgid "Nombre de personnes"
+msgstr ""
+
+#: controllers/gift_ctrl.js:57
+#: controllers/signup_ctrl.js:69
+msgid "Non disponible sur un navigateur"
+msgstr ""
+
+#: controllers/shops_ctrl.js:95
+msgid ""
+"Notre application nécessite une connexion réseau pour fonctionner.\n"
+"        Modifiez vos réglages ou réessayez plus tard"
+msgstr ""
+
+#: controllers/forums_ctrl.js:28
+msgid "Nouveau"
+msgstr ""
+
+#: controllers/forums_new_ctrl.js:14
+msgid "Nouveau message"
+msgstr ""
+
+#: www/newpass.html:15
+msgid "Nouveau mot de passe"
+msgstr ""
+
+#: www/registration.html:18
+#: www/registration.html:44
+msgid "N° mobile"
+msgstr ""
+
+#: controllers/appointment_schedule_ctrl.js:55
+#: controllers/forms_detail_ctrl.js:25
+#: controllers/gift_ctrl.js:38
+#: controllers/happenings_ctrl.js:185
+#: controllers/happenings_ctrl.js:224
+#: controllers/happenings_ctrl.js:243
+#: controllers/happenings_new_ctrl.js:97
+#: controllers/registration_ctrl.js:182
+#: controllers/registration_ctrl.js:224
+#: controllers/registration_ctrl.js:273
+#: directives/pickers.js:164
+#: directives/pickers.js:61
+#: directives/selectors.js:45
+#: directives/tags.js:102
+msgid "OK"
+msgstr ""
+
+#: www/cards/list.html:72
+#: www/sponsorship.html:28
+msgid "Par email"
+msgstr ""
+
+#: www/cards/list.html:77
+#: www/sponsorship.html:33
+msgid "Par sms"
+msgstr ""
+
+#: www/cards/list.html:69
+#: www/sponsorship.html:25
+msgid "Parrainer mes amis"
+msgstr ""
+
+#: www/happenings/1/_detail.html:83
+msgid "Participer"
+msgstr ""
+
+#: www/countries.html:3
+msgid "Pays"
+msgstr ""
+
+#: factories/fd_i18n.js:23
+msgid "Plus"
+msgstr ""
+
+#: www/appstores.html:11
+#: www/stores.html:9
+msgid "Plus simple,<br>plus rapide, plus facile"
+msgstr ""
+
+#: controllers/game_ctrl.js:8
+#: www/appstores.html:21
+msgid "Plus tard"
+msgstr ""
+
+#: www/cards/list.html:83
+#: www/sponsorship.html:39
+msgid "Pour mes amis :"
+msgstr ""
+
+#: www/cards/list.html:88
+#: www/sponsorship.html:44
+msgid "Pour moi :"
+msgstr ""
+
+#: www/cards/gift.html:3
+msgid "Pour {{currentGift.floor_points}} points"
+msgstr ""
+
+#: www/items/_list.html:25
+#: www/items/cart.html:26
+msgid "Prendre un rendez-vous"
+msgstr ""
+
+#: controllers/registration_ctrl.js:337
+msgid "Prendre une photo"
+msgstr ""
+
+#: www/registration.html:38
+msgid "Prénom"
+msgstr ""
+
+#: www/survey.html:32
+msgid "Quelle est la probabilité pour que vous nous recommandiez à un ami ou un proche ?"
+msgstr ""
+
+#: www/countries.html:10
+#: www/items/_list.html:9
+#: www/items/cart.html:10
+#: www/places/list.html:10
+#: www/places/popup.html:6
+#: www/shops/locator.html:5
+#: www/shops/popup.html:6
+msgid "Recherche"
+msgstr ""
+
+#: www/admin/contacts.html:9
+msgid "Rechercher un contact"
+msgstr ""
+
+#: controllers/appointment_new_ctrl.js:79
+msgid "Rendez-vous"
+msgstr ""
+
+#: www/items/cart.html:27
+msgid "Retirer de ma liste"
+msgstr ""
+
+#: app.js:34
+#: www/iframe.html:14
+#: www/tag/list.html:5
+msgid "Retour"
+msgstr ""
+
+#: www/game.html:45
+msgid "Règlement du jeu"
+msgstr ""
+
+#: www/profile.html:39
+#: www/profile.html:48
+msgid "Règles de confidentialité"
+msgstr ""
+
+#: controllers/appointment_new_ctrl.js:82
+msgid "Réservation"
+msgstr ""
+
+#: controllers/profile_ctrl.js:34
+msgid "Se déconnecter?"
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:157
+msgid "Suppression"
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:161
+#: www/happenings/0/_detail.html:56
+#: www/happenings/1/_detail.html:92
+msgid "Supprimer"
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:158
+msgid "Supprimer cet événement ?"
+msgstr ""
+
+#: www/registration.html:101
+msgid "Sécurité"
+msgstr ""
+
+#: www/shops/selector.html:5
+msgid "Sélectionnez un lieu"
+msgstr ""
+
+#: www/game.html:23
+msgid "Tentez votre chance pour gagner :"
+msgstr ""
+
+#: www/admin/message.html:9
+#: www/contact.html:17
+msgid "Texte du message"
+msgstr ""
+
+#: www/forums/new.html:5
+#: www/happenings/0/_new.html:4
+#: www/happenings/1/_new.html:4
+msgid "Titre"
+msgstr ""
+
+#: www/happenings/0/_detail.html:37
+#: www/happenings/1/_detail.html:40
+#: www/messages/_list.html:34
+msgid "Traduire"
+msgstr ""
+
+#: controllers/signup_ctrl.js:78
+msgid "Un message vous a été envoyé à votre adresse email."
+msgstr ""
+
+#: controllers/registration_ctrl.js:160
+msgid "Une erreur est survenue avec l'envoi de votre avatar."
+msgstr ""
+
+#: controllers/signup_ctrl.js:81
+msgid "Une erreur est survenue veuillez vérifier votre saisie"
+msgstr ""
+
+#: controllers/admin/message_ctrl.js:28
+#: controllers/appointment_ctrl.js:69
+#: controllers/appointment_new_ctrl.js:104
+#: controllers/contact_ctrl.js:24
+#: controllers/forms_detail_ctrl.js:100
+#: controllers/forums_new_ctrl.js:35
+#: controllers/gift_ctrl.js:97
+#: controllers/happenings_new_ctrl.js:126
+#: controllers/happenings_new_ctrl.js:138
+#: controllers/registration_ctrl.js:175
+#: controllers/signup_ctrl.js:66
+#: controllers/surveys_ctrl.js:37
+msgid "Une erreur est survenue."
+msgstr ""
+
+#: directives/camera.js:87
+msgid ""
+"Une erreur est survenue.\n"
+"{{error}}"
+msgstr ""
+
+#: www/dev-mode.html:14
+msgid "Url serveur"
+msgstr ""
+
+#: www/gains/show.html:12
+msgid "Utilisé à {{consumedAt | date:'short' }}"
+msgstr ""
+
+#: www/cards/list.html:41
+#: www/cards/list.html:51
+#: www/messages/_list.html:54
+msgid "Valable jusqu'au {{date}}"
+msgstr ""
+
+#: www/appointment/_new.html:38
+#: www/dev-mode.html:36
+#: www/happenings/0/_new.html:51
+#: www/happenings/1/_new.html:51
+#: www/newpass.html:21
+#: www/registration.html:115
+#: www/survey.html:38
+msgid "Valider"
+msgstr ""
+
+#: www/forms/_detail.html:24
+msgid "Valider mes réponses"
+msgstr ""
+
+#: controllers/gift_ctrl.js:51
+msgid "Veuillez donner votre téléphone à votre interlocuteur afin de valider votre demande"
+msgstr ""
+
+#: controllers/signup_ctrl.js:20
+msgid "Veuillez indiquer votre mot de passe"
+msgstr ""
+
+#: www/registration.html:80
+msgid "Ville"
+msgstr ""
+
+#: controllers/appointment_ctrl.js:64
+#: controllers/appointment_new_ctrl.js:98
+#: controllers/forms_detail_ctrl.js:98
+#: controllers/forums_new_ctrl.js:28
+#: controllers/happenings_new_ctrl.js:122
+#: controllers/happenings_new_ctrl.js:134
+#: controllers/surveys_ctrl.js:31
+msgid "Votre demande a été enregistrée."
+msgstr ""
+
+#: www/forums/new.html:11
+msgid "Votre message"
+msgstr ""
+
+#: controllers/signup_ctrl.js:85
+msgid "Vous devez renseigner l'email de votre compte ou nous contacter."
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:68
+msgid "aucun inscrit"
+msgstr ""
+
+#: www/registration.html:15
+#: www/registration.html:41
+msgid "e-mail"
+msgstr ""
+
+#: www/partials/0/sign-up.html:11
+msgid "e-mail ou téléphone"
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:72
+msgid "inscrits"
+msgstr ""
+
+#: controllers/menu_ctrl.js:108
+msgid "maintenant"
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:70
+msgid "un inscrit"
+msgstr ""
+
+#: www/instagram/list.html:12
+msgid "{{instagram.profile.counts.media}} publications - {{instagram.profile.counts.followed_by}} abonnés - {{instagram.profile.counts.follows}} suivis"
+msgstr ""
+
+#: controllers/forums_categories_ctrl.js:55
+msgid "{{nb}} message"
+msgstr ""
+
+#: controllers/forums_categories_ctrl.js:51
+msgid "{{nb}} messages"
+msgstr ""
+
+#: controllers/forums_ctrl.js:24
+msgid "{{nb}} rép."
+msgstr ""
+
+#: controllers/happenings_detail_ctrl.js:82
+msgid "{{quota}} participants max."
+msgstr ""
+
+#: controllers/happenings_ctrl.js:129
+msgid "{{quota}} participants maximum"
+msgstr ""
+
+#: www/contact.html:12
+msgid "À"
+msgstr ""
+
+#: www/happenings/0/_detail.html:15
+#: www/happenings/0/_list.html:56
+#: www/happenings/1/_list.html:56
+msgid "à"
+msgstr ""
+
+#: www/happenings/0/_new.html:41
+#: www/happenings/1/_new.html:41
+msgid "Ētre notifié de nouvelles inscriptions"
+msgstr ""

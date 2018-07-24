@@ -1,0 +1,41 @@
+.survey-ranges {
+  @include display-flex();
+  @include align-items(center);
+  @include flex-flow(row wrap);
+  @include justify-content(space-around);
+}
+
+.survey-ranges span, .survey-ranges .icon {
+  @include flex(0);
+  display: block;
+  min-width: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.survey-ranges span {
+  border: 1px solid $item-default-text;
+  font-size: 16px;
+}
+
+.survey-ranges span.active {
+  background-color: $item-default-text;
+  color: $item-default-bg;
+}
+
+.survey-tabs .button {
+  font-size: 85%;
+  margin: 0;
+}
+
+.survey-tabs .button:before {
+  font-size: 15px;
+}
+
+.survey-tabs .active {
+  border: 1px solid #2B2B2B;
+}
+
+.survey-star {
+  margin-right: 6px;
+}

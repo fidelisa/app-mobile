@@ -1,0 +1,36 @@
+<ion-content ng-show="logged">
+
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div class="list list-inset">
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="itemCtrl.searchText"  placeholder="{{'Recherche'|translate}}">
+        </label>
+    </div>
+
+    <div ng-class="list" ng-repeat="item in listItems" ng-if="item.active">
+        <div class="item item-body item-items">
+            <img class="full-image" fd-image-src="{{item.image_id}}" ng-if="item.image_id">
+
+            <div ng-click="toggleDesc(item)">
+                <p class="fd-title">{{item.title}}</p>
+
+                <p class="fd-desc" ng-class="{'fd-desc-full': item.fullDesc }" ng-bind-html="item.descEncode"></p>
+                <p class="fd-status">{{availableMessage(item)}}</p>
+            </div>
+        </div>
+        <div class="item text-center" ng-if="showButtons(item)">
+          <button class="button button-block" ng-if="item.with_planning" ng-click="showPlanning($index)" translate>Prendre un rendez-vous</button>
+          <div class="text-button" ng-if="!item.added" ng-click="addItem($index)" translate>Ajouter à ma liste</div>
+        </div>
+    </div>
+
+    <div ng-class="list">
+        <div class="item text-center" ng-if="showMore()">            
+            <div class="text-button" ng-click="moreItem()" translate>Afficher plus</div>
+        </div>
+    </div>
+
+</ion-content>

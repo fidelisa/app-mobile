@@ -1,0 +1,97 @@
+<ion-content id="happening_detail">
+
+  <div ng-class="list" class="item-happening" ng-if="happening">
+
+    <img class="fd-image" fd-image-src="{{happening.image_id}}" ng-if="happening.image_id">
+
+    <div class="item item-icon-left">
+
+      <div class="s1_subtitle">
+        {{ fdTranslate('QUAND ?', {'en':'WHEN ?'}) }}
+        <i class="icon s1_icon_clock ion-ios-clock-outline"></i>
+      </div>
+
+      <div class="s1_date">{{secureDate(happening.started_at, 'EEEE dd MMMM yyyy - ', happening.timezone)}} {{secureDate(happening.started_at, 'shortTime', happening.timezone)}}
+      </div>
+
+      <div ng-show="happening.duration" class="s1_duration" translate>
+          Durée : {{happening.duration | mintohours}}
+      </div>
+
+    </div>
+
+    <div class="item item-icon-left">
+
+      <div class="s1_subtitle">
+        {{ fdTranslate('QUOI ?', {'en':'WHAT ?'}) }}
+        <i class="icon s1_icon_chat ion-ios-chatboxes-outline"></i>
+      </div>
+
+      <div class="s1_title">
+        {{happening.title}}
+      </div>
+
+      <fd-tag ng-model="happening.tag_ids" disable-click fd-tags-options="happenings"></fd-tag>
+
+      <div ng-click="toggleDesc()">
+        <div class="fd-desc-full" ng-class="{'fd-desc': !happening.fullDesc }" ng-bind-html="happening.descEncode"></div>
+        <div class="fd-translate" ng-click="toggleTranslate(happening)" ng-show="withLocalization">
+          <i class="ion-ios-world-outline"></i>
+          <span> </span><span translate>Traduire</span>
+          <div class="fd-desc-full" ng-class="{'fd-desc': !happening.fullDesc }"  ng-show="happening.showTranslate" ng-bind-html="happening.htmlTr"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="item item-icon-left">
+
+      <div class="s1_subtitle">
+        {{ fdTranslate('OÙ ?', {'en':'WHERE ?'}) }}
+        <i class="icon s1_icon_locate ion-ios-location-outline"></i>
+      </div>
+
+      <div ng-show="happening.vendor_id" class="s1_shop">
+        {{happening.vendor_title}}
+      </div>
+      <div ng-show="happening.place_location" class="s1_place">
+        {{happening.place_location}}
+      </div>
+
+    </div>
+
+    <div class="item item-icon-left">
+      <div class="s1_subtitle">
+        {{ fdTranslate('QUI ?', {'en':'WHO ?'}) }}
+        <i class="icon s1_icon_person ion-ios-people-outline"></i>
+        <div ng-if="happening.customer" class="item-avatar-right" style="min-height: 0px;">
+          <fd-avatar fd-image="happening.customer.image_id"></fd-avatar>
+        </div>
+        <div ng-if="happening.customer" class="s1_customer">
+          <span class="s1_customer">{{getCustomerName()}}</span>
+        </div>
+        <div class="s1_participants">
+          {{availableMessage()}} <span> - {{confirmedCustomers()}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+
+    <div ng-if="!own(happening)">
+      <button class="button button-block" ng-if="canParticipate()" ng-click="participate(true)" translate>Participer</button>
+      <div class="text-button" ng-if="happening.confirmed" ng-click="addToCalendar()" translate>Ajouter à mon calendrier</div>
+      <div class="text-button" ng-if="happening.confirmed" ng-click="participate(false)" translate>Je ne participe plus</div>
+    </div>
+
+    <div ng-if="own(happening)">
+      <div class="text-button" ng-click="addToCalendar()" translate>Ajouter à mon calendrier</div>
+      <button class="button button-block" ng-click="showParticipants()" translate>Liste des participants</button>
+      <button class="button button-block" ng-click="modifyHappening()" translate>Modifier</button>
+      <button class="button button-block" ng-click="askDelete()" translate>Supprimer</button>
+    </div>
+
+  </div>
+
+</ion-content>

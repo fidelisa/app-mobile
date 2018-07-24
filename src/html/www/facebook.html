@@ -1,0 +1,35 @@
+
+<ion-view view-title={{getTitleString('facebook')}}>
+  <ion-content id="facebook">
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-show="profile" class="fd-fb-header" fd-bg-style="profile.cover.source">
+      <div class="item item-avatar item-icon-right">
+        <img ng-src="{{profile.picture.data.url}}" ng-show="profile.picture.data.url">
+        <h2>{{profile.name}}</h2>
+        <p>{{profile.category}}</p>
+        <p ng-show="showLike(profile.likes)">{{profile.likes}} aiment</p>
+        <i class="icon ion-share" ng-click="share(fbUrl)" ng-show="canShare"></i>
+      </div>
+    </div>
+
+    <div ng-class="list" ng-repeat="msg in data" >
+
+      <div class="item item-avatar item-icon-right">
+        <img ng-src="{{profile.picture.data.url}}" ng-show="profile.picture.data.url">
+        <h2>{{profile.name}}</h2>
+        <p>{{dateAgo(msg.created_time)}}</p>
+        <i class="icon ion-share" ng-click="share(msg.link)" ng-show="canShare"></i>
+      </div>
+
+      <div class="item item-body">
+        <p ng-bind-html="convertFB(msg.message)"></p>
+        <div class='text-center'>
+          <img class="fb-image" ng-src="{{msg.full_picture}}" ng-show="msg.full_picture">
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

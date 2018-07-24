@@ -1,0 +1,17 @@
+
+.barcode .list {
+  height: 100%;
+}
+
+.barcode .list {
+  width: 100%;
+}
+
+.barcode .list .item {
+  height: 101%;
+  @include display-flex();
+  @include align-items(center);
+  @include flex-flow(column);
+  @include justify-content(space-around);
+
+}

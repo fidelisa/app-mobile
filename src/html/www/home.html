@@ -1,0 +1,14 @@
+
+<ion-view view-title="{{headtitle}}">
+  <ion-nav-title>
+    <fd-title />
+  </ion-nav-title>
+
+  <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear" ng-click="showAdmin()" ng-if="superCustomer">
+        <i class="icon ion-toggle-filled"></i>
+      </button>
+  </ion-nav-buttons>
+
+<div ng-include="'templates/home/_home.html'"></div>
+  

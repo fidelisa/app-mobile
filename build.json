@@ -1,0 +1,18 @@
+{
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "iPhone Developer: Philippe Morin (6UPFMS7685)",
+            "provisioningProfile": "f8b88c3b-6ecb-47e7-ad0e-c06ceb272351",
+            "developmentTeam": "3786M95885",
+            "packageType": "development",
+            "swiftVersion": "3.0"
+        },
+        "release": {
+            "codeSignIdentity": "iPhone Distribution: FIDELISA (3786M95885)",
+            "provisioningProfile": "979f6825-9024-45c9-930d-f3f915fc8d11",            
+            "developmentTeam": "3786M95885",
+            "packageType": "app-store",
+            "swiftVersion": "3.0"
+        }
+    }
+}

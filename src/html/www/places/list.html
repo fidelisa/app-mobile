@@ -1,0 +1,22 @@
+<ion-modal-view  ng-controller="PlacesCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Lieux</h1>
+  </ion-header-bar>
+
+  <ion-header-bar class="bar bar-subheader">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" ng-model="searchText" placeholder="{{'Recherche'|translate}}">
+      </label>
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="has-subheader" delegate-handle="placesScroll">
+    <div ng-class="list" >
+      <div class="item" ng-click="pickPlace()" translate>Aucun</div>
+      <div ng-repeat="place in places | filter:searchText " class="item" ng-click="pickPlace(place)">{{place.title}}</div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget CFBundleVersion="1" android-versionCode="1" id="com.fidelisa.app67ec81bedb884fc1a626f4621de3c5e7" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Fidelisa Demo</name>
+    <description>
+
+et bien plus
+
+Consultez-nous pour plus d'informations
+
+
+
+
+
+ </description>
+    <author email="contact@fidelisa.com" href="www.fidelisa.com">Fidelisa</author>
+    <access origin="*" />
+    <access origin="http://*" />
+    <access origin="https://*" />
+    <access launch-external="yes" origin="tel://*" />
+    <access launch-external="yes" origin="geo://*" />
+    <access launch-external="yes" origin="mailto://*" />
+    <access launch-external="yes" origin="sms://*" />
+    <access launch-external="yes" origin="market://*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true"/>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+        <param name="ios-package" value="SocialSharing" />
+    </feature>
+    <hook src="scripts/all/beforePrepareXml.js" type="before_prepare" />
+    <platform name="android">
+        <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+        <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+        <hook src="scripts/android/beforePlatformAdd.js" type="before_platform_add" />
+        <preference name="SplashScreenDelay" value="10000" />
+        <source-file src="src/android/lib/build-extras.gradle" target-dir="src/.." />
+        <resource-file src="google-services.json" target="google-services.json"/>
+    </platform>
+    <platform name="ios">
+        <icon height="57" src="resources/ios/icon/icon.png" width="57" />
+        <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
+        <icon height="40" src="resources/ios/icon/icon-40.png" width="40" />
+        <icon height="80" src="resources/ios/icon/icon-40@2x.png" width="80" />
+        <icon height="50" src="resources/ios/icon/icon-50.png" width="50" />
+        <icon height="100" src="resources/ios/icon/icon-50@2x.png" width="100" />
+        <icon height="60" src="resources/ios/icon/icon-60.png" width="60" />
+        <icon height="120" src="resources/ios/icon/icon-60@2x.png" width="120" />
+        <icon height="180" src="resources/ios/icon/icon-60@3x.png" width="180" />
+        <icon height="72" src="resources/ios/icon/icon-72.png" width="72" />
+        <icon height="144" src="resources/ios/icon/icon-72@2x.png" width="144" />
+        <icon height="76" src="resources/ios/icon/icon-76.png" width="76" />
+        <icon height="152" src="resources/ios/icon/icon-76@2x.png" width="152" />
+        <icon height="29" src="resources/ios/icon/icon-small.png" width="29" />
+        <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58" />
+        <icon height="87" src="resources/ios/icon/icon-small@3x.png" width="87" />
+        <icon height="1024" src="resources/ios/icon/icon-mkt.png" width="1024" />
+        <splash src="resources/ios/splash/Default@2x~universal~anyany.png" />
+        <config-file parent="CFBundleDevelopmentRegion" target="*-Info.plist">
+            <string>fr_FR</string>
+        </config-file>
+        <config-file parent="NSAppTransportSecurity" target="*-Info.plist">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true />
+            </dict>
+        </config-file>
+        <config-file parent="UIBackgroundModes" target="*-Info.plist">
+            <array>
+                <string>fetch</string>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+        <preference name="Orientation" value="all" />
+    </platform>
+    <platform name="browser">
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="SplashScreenBackgroundColor" value="green" />
+        <preference name="ShowSplashScreen" value="false" />
+        <preference name="SplashScreenWidth" value="600" />
+        <preference name="SplashScreenHeight" value="300" />
+    </platform>
+    <content src="index.html" />
+    <engine name="android" spec="^6.4.0" />
+    <engine name="ios" spec="^4.5.3" />
+    <engine name="browser" spec="^5.0.1" />
+    <plugin name="com.unarin.cordova.beacon" spec="https://github.com/petermetz/cordova-plugin-ibeacon.git" />
+    <plugin name="cordova-plugin-add-swift-support" spec="^1.6.2" />
+    <plugin name="cordova-plugin-calendar" spec="^4.5.5">
+        <variable name="CALENDAR_USAGE_DESCRIPTION" value="Ajouter des dates à mon calendrier" />
+    </plugin>
+    <plugin name="cordova-plugin-camera" spec="^2.4.1">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Prendre une photo pour votre message" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Choisir une photo pour votre message" />
+    </plugin>
+    <plugin name="cordova-plugin-compat" spec="^1.1.0" />
+    <plugin name="cordova-plugin-device" spec="^1.1.6" />
+    <plugin name="cordova-plugin-dialogs" spec="^1.2.1" />
+    <plugin name="cordova-plugin-email" spec="^1.2.6" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.6.3" />
+    <plugin name="cordova-plugin-geofence" spec="https://github.com/ypelud/cordova-plugin-geofence.git" />
+    <plugin name="cordova-plugin-geolocation" spec="^2.2.0" />
+    <plugin name="cordova-plugin-globalization" spec="^1.0.7" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.4.0" />
+    <plugin name="cordova-plugin-pin-dialog" spec="^0.1.3" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^1.4.3" />
+    <plugin name="cordova-plugin-splashscreen" spec="^3.2.2" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.1.3" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.2.2" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.0.12" />
+    <plugin name="cordova-plugin-x-toast" spec="^2.5.2" />
+    <plugin name="cordova-sms-plugin" spec="^0.1.11" />
+    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <plugin name="cordova-plugin-safariviewcontroller" spec="^1.4.7" />
+    <plugin name="cordova-plugin-websubview" spec="https://github.com/fidelisa/cordova-plugin-websubview.git" />
+    <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
+        <variable name="APP_ID" value="1470618426299510" />
+        <variable name="APP_NAME" value="Fidelisa" />
+    </plugin>
+    <plugin name="phonegap-plugin-push" spec="^2.1.1">
+        <variable name="SENDER_ID" value="1:200659929715:android:e6ebad555c045e6d" />
+    </plugin>
+</widget>

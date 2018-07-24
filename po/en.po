@@ -1,0 +1,907 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: controllers/admin/home_ctrl.js:6
+msgid "Administration"
+msgstr "Administration"
+
+#: www/registration.html:69
+msgid "Adresse"
+msgstr "Addresse"
+
+#: www/registration.html:71
+msgid "Adresse 1"
+msgstr "Address Line 1"
+
+#: www/registration.html:74
+msgid "Adresse 2"
+msgstr "Address Line 2"
+
+#: www/items/_list.html:32
+msgid "Afficher plus"
+msgstr "Show more"
+
+#: www/forums/new.html:17
+msgid "Ajouter votre message"
+msgstr "Add your message"
+
+#: www/items/_list.html:26
+msgid "Ajouter à ma liste"
+msgstr "Add to my wishlist"
+
+#: www/appointment/list.html:29 www/happenings/0/_detail.html:48
+#: www/happenings/0/_detail.html:53 www/happenings/1/_detail.html:84
+#: www/happenings/1/_detail.html:89
+msgid "Ajouter à mon calendrier"
+msgstr "Add to my calendar"
+
+#: controllers/items_ctrl.js:77
+msgid "Ajouté dans votre liste."
+msgstr "Added to your list."
+
+#: www/newpass.html:12
+msgid "Ancien mot de passe"
+msgstr "Old password"
+
+#: controllers/profile_ctrl.js:123
+msgid "Ancien mot de passe incorrect"
+msgstr "Old password is wrong"
+
+#: controllers/appointment_schedule_ctrl.js:54 controllers/gift_ctrl.js:36
+#: controllers/happenings_ctrl.js:184 controllers/happenings_ctrl.js:225
+#: controllers/happenings_ctrl.js:244 controllers/happenings_detail_ctrl.js:159
+#: controllers/happenings_new_ctrl.js:98 controllers/profile_ctrl.js:35
+#: controllers/registration_ctrl.js:183 controllers/registration_ctrl.js:225
+#: controllers/registration_ctrl.js:272 controllers/registration_ctrl.js:338
+#: directives/pickers.js:163 directives/pickers.js:60
+#: directives/selectors.js:46 directives/tags.js:103
+#: www/appointment/_new.html:41 www/dev-mode.html:40
+#: www/happenings/0/_new.html:55 www/happenings/1/_new.html:55
+#: www/newpass.html:25 www/registration.html:118 www/survey.html:42
+msgid "Annuler"
+msgstr "Cancel"
+
+#: www/dev-mode.html:8
+msgid "App config"
+msgstr "App config"
+
+#: controllers/forums_categories_ctrl.js:59 www/places/list.html:17
+#: www/tag/list.html:13 www/tag/popup.html:2
+msgid "Aucun"
+msgstr "None"
+
+#: www/happenings/1/_list.html:39
+msgid "Aucun déjeuner pour l'instant"
+msgstr "No lunch at the moment"
+
+#: www/messages/_list.html:19
+msgid "Aucun message pour l'instant"
+msgstr "No message at the moment"
+
+#: www/sponsorship.html:58
+msgid "Aucun parrainage disponible"
+msgstr "No sponsorship available"
+
+#: www/happenings/0/_participants.html:3 www/happenings/1/_participants.html:4
+msgid "Aucun participant pour l'instant"
+msgstr "No participant at the moment"
+
+#: www/appointment/schedule.html:21
+msgid "Aucun rendez-vous disponible"
+msgstr "No appointment available"
+
+#: www/happenings/0/_list.html:39
+msgid "Aucun événement pour l'instant"
+msgstr "No events at this time"
+
+#: controllers/game_ctrl.js:42
+msgid "Bravo, vous avez gagné !"
+msgstr "Congratulations, you have won"
+
+#: www/registration.html:62
+msgid "Centres d'intérêts"
+msgstr "Interests"
+
+#: www/partials/0/sign-up.html:32 www/partials/1/sign-up.html:29
+#: www/profile.html:31
+msgid "Changer de langue"
+msgstr "Switch language"
+
+#: www/newpass.html:9 www/profile.html:27
+msgid "Changer de mot de passe"
+msgstr "Change password"
+
+#: controllers/registration_ctrl.js:336
+msgid "Choisir une photo"
+msgstr "Choose a photo"
+
+#: www/appointment/_new.html:22
+msgid "Choisissez votre horaire"
+msgstr "Choose your schedule"
+
+#: www/registration.html:77
+msgid "Code postal"
+msgstr "Zip code"
+
+#: www/survey.html:22
+msgid "Comment évaluez-vous les points suivants ?"
+msgstr "How would you rate the following?"
+
+#: controllers/happenings_ctrl.js:125 controllers/happenings_detail_ctrl.js:78
+msgid "Complet"
+msgstr "Sold out"
+
+#: www/cards/legal-statment.html:13
+msgid "Conditions d'utilisation"
+msgstr "Terms of use"
+
+#: www/newpass.html:18
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#: www/registration.html:107
+msgid "Confirmation mot de passe"
+msgstr "Confirm password"
+
+#: www/appointment/list.html:18
+msgid ""
+"Confirmé le {{secureDate(appointment.validated_at, \"shortDate\", "
+"appointment.timezone)}}"
+msgstr ""
+"Confirmed on  {{secureDate(appointment.validated_at, \"shortDate\", "
+"appointment.timezone)}}"
+
+#: www/partials/0/sign-up.html:18 www/partials/0/sign-up.html:5
+#: www/partials/1/sign-up.html:16
+msgid "Connexion"
+msgstr "Connection"
+
+#: www/partials/0/sign-up.html:24 www/partials/1/sign-up.html:22
+msgid "Connexion via Facebook"
+msgstr "Connect with Facebook"
+
+#: controllers/admin/contact_ctrl.js:6
+msgid "Contact"
+msgstr "Contact"
+
+#: controllers/admin/contacts_ctrl.js:4
+msgid "Contacts"
+msgstr "Contacts"
+
+#: controllers/happenings_new_ctrl.js:28
+msgid "Création"
+msgstr "Creation"
+
+#: controllers/appointment_schedule_ctrl.js:52
+#: controllers/happenings_ctrl.js:182 controllers/registration_ctrl.js:270
+#: directives/pickers.js:158 directives/pickers.js:58
+#: www/happenings/0/_list.html:17 www/happenings/0/_new.html:28
+#: www/happenings/1/_list.html:17 www/happenings/1/_new.html:28
+msgid "Date"
+msgstr "Date"
+
+#: www/contact.html:8
+#, fuzzy
+#| msgid "Date"
+msgid "De"
+msgstr "Date"
+
+#: www/happenings/0/_new.html:15 www/happenings/1/_new.html:15
+msgid "Description"
+msgstr "Description"
+
+#: www/cards/legal-statment.html:10 www/cards/legal-statment.html:3
+#: www/cards/list.html:27
+msgid "Description du programme"
+msgstr "Description of the program"
+
+#: www/dev-mode.html:3 www/partials/0/sign-up.html:34
+#: www/partials/1/sign-up.html:31
+msgid "DevMode"
+msgstr "DevMode"
+
+#: www/happenings/0/_new.html:34 www/happenings/1/_new.html:34
+msgid "Durée"
+msgstr "Duration"
+
+#: www/happenings/0/_detail.html:13 www/happenings/0/_list.html:55
+#: www/happenings/1/_detail.html:17 www/happenings/1/_list.html:55
+msgid "Durée : {{happening.duration | mintohours}}"
+msgstr "Time : {{happening.duration | mintohours}}"
+
+#: controllers/profile_ctrl.js:33 controllers/profile_ctrl.js:37
+#: www/profile.html:20
+msgid "Déconnexion"
+msgstr "Sign Out"
+
+#: controllers/game_ctrl.js:44
+msgid "Désolé, vous avez perdu."
+msgstr "Sorry, you lost."
+
+#: www/appointment/_new.html:33
+msgid "Détails"
+msgstr "Details"
+
+#: www/appointment/list.html:19
+msgid "En attente"
+msgstr "Waiting"
+
+#: www/survey.html:3
+msgid "Enquête satisfaction"
+msgstr "Satisfaction survey"
+
+#: www/forms/_detail.html:27
+msgid "Enregistrer"
+msgstr "Register"
+
+#: www/cards/points.html:3
+msgid "Enregistrer des points"
+msgstr "Save points"
+
+#: www/appstores.html:18 www/stores.html:16
+msgid "Enrichissez votre expérience avec notre application gratuite"
+msgstr "Enhance your experience with our free app"
+
+#: www/contact.html:21
+msgid "Envoyer"
+msgstr "Send"
+
+#: www/admin/message.html:14
+msgid "Envoyer le message"
+msgstr "Send the message"
+
+#: controllers/admin/message_ctrl.js:5 factories/admin_resources.js:48
+msgid "Envoyer un message"
+msgstr "Send a message"
+
+#: controllers/registration_ctrl.js:302
+msgid "Femme"
+msgstr "Woman"
+
+#: controllers/game_ctrl.js:46 www/forms/_detail.html:5 www/gains/show.html:14
+msgid "Fermer"
+msgstr "Close"
+
+#: controllers/forms_detail_ctrl.js:53
+msgid "Formulaire"
+msgstr "Form"
+
+#: controllers/gift_ctrl.js:34 www/gains/show.html:3
+msgid "Gain"
+msgstr "Win"
+
+#: www/survey.html:16
+msgid "Globalement, diriez-vous que vous êtes..."
+msgstr "Overall, would you say you are ..."
+
+#: www/happenings/0/_new.html:31 www/happenings/1/_new.html:31
+msgid "Heure"
+msgstr "Time"
+
+#: controllers/registration_ctrl.js:301
+msgid "Homme"
+msgstr "Man"
+
+#: www/appointment/schedule.html:8
+msgid "Horaires"
+msgstr "Hours"
+
+#: www/registration.html:12
+msgid "Identifiant"
+msgstr "Credential"
+
+#: controllers/menu_ctrl.js:113
+msgid "Il y a 1 heure"
+msgstr "about 1 hour ago"
+
+#: controllers/menu_ctrl.js:109
+msgid "Il y a 1 minute"
+msgstr "1 minute ago"
+
+#: controllers/menu_ctrl.js:118
+msgid "Il y a {{d}} jours"
+msgstr "{{d}} days ago"
+
+#: controllers/menu_ctrl.js:114
+msgid "Il y a {{h}} heures"
+msgstr "{{h}} hours ago"
+
+#: controllers/menu_ctrl.js:110
+msgid "Il y a {{m}} minutes"
+msgstr "{{m}} minutes ago"
+
+#: controllers/menu_ctrl.js:121
+msgid "Il y a {{w}} semaines"
+msgstr "{{w}} weeks ago"
+
+#: controllers/happenings_ctrl.js:127 controllers/happenings_detail_ctrl.js:80
+#: controllers/happenings_new_ctrl.js:13 controllers/happenings_new_ctrl.js:16
+msgid "Illimité"
+msgstr "Unlimited"
+
+#: www/partials/1/sign-up.html:9
+msgid "Indiquez votre e-mail"
+msgstr "Enter your e-mail"
+
+#: www/registration.html:85
+msgid "Informations complémentaires"
+msgstr "Additional informations"
+
+#: www/registration.html:33
+msgid "Informations personnelles"
+msgstr "Personal information"
+
+#: www/partials/0/sign-up.html:27 www/partials/1/sign-up.html:25
+#: www/registration.html:9
+msgid "Inscription"
+msgstr "Registration"
+
+#: www/happenings/0/_list.html:6 www/happenings/1/_list.html:6
+msgid "J'ai créé"
+msgstr "I created"
+
+#: www/registration.html:23
+msgid "Je m'inscris avec avec mon e-mail"
+msgstr "I sign up with with my email"
+
+#: www/happenings/0/_detail.html:49 www/happenings/1/_detail.html:85
+msgid "Je ne participe plus"
+msgstr "I do not participate anymore"
+
+#: www/happenings/0/_detail.html:27 www/happenings/0/_detail.html:47
+#: www/happenings/0/_list.html:10 www/happenings/0/_list.html:69
+#: www/happenings/1/_list.html:10 www/happenings/1/_list.html:69
+msgid "Je participe"
+msgstr "I participate"
+
+#: controllers/cards_ctrl.js:228
+msgid ""
+"Je vous recommande\n"
+"      {{ownerTitle}}\n"
+"      {{ownerUrl}}\n"
+"      En venant de ma part, vous profiterez de\n"
+"      {{sponsoredGift}}.\n"
+"      Pour bénéficier de votre cadeau, inscrivez-vous en suivant ce lien\n"
+"      {{promoUrlCode}}"
+msgstr ""
+"I recommend {{ownerTitle}} {{ownerUrl}} from my part, you will benefit from "
+"{{sponsoredGift}}.\n"
+"      To benefit from your gift, sign up by following this link "
+"{{promoUrlCode}}"
+
+#: www/game.html:34
+msgid "Jeu valable jusqu'au {{date}}"
+msgstr "Valid game until the {{date}}"
+
+#: www/game.html:30
+msgid "Jouer"
+msgstr "Play"
+
+#: www/game.html:15
+msgid "Jouez à notre jeu"
+msgstr "Play our game"
+
+#: www/survey.html:25
+#, fuzzy
+#| msgid "Accueil"
+msgid "L'accueil"
+msgstr "Home"
+
+#: controllers/signup_ctrl.js:25
+msgid ""
+"L'identification n'a pas été possible,          veuillez vérifier votre "
+"saisie"
+msgstr "The identification was not possible, please check your entry"
+
+#: www/survey.html:27
+#, fuzzy
+#| msgid "Création"
+msgid "La relation"
+msgstr "Creation"
+
+#: controllers/forms_detail_ctrl.js:54
+msgid "Le formulaire est introuvable"
+msgstr "The form is not found"
+
+#: controllers/admin/message_ctrl.js:24
+msgid "Le message a été envoyé."
+msgstr "The message has been sent."
+
+#: controllers/profile_ctrl.js:125
+msgid "Le mot de passe de confirmation est incorrect"
+msgstr "The confirmation password is incorrect"
+
+#: controllers/signup_ctrl.js:18
+#, fuzzy
+#| msgid "Ancien mot de passe incorrect"
+msgid "Le mot de passe incorrect"
+msgstr "Old password is wrong"
+
+#: controllers/profile_ctrl.js:131
+msgid "Le mot de passe {{pass}}"
+msgstr "The password {{pass}}"
+
+#: www/survey.html:29
+msgid "Le rapport qualité/prix"
+msgstr "Value for Money"
+
+#: www/registration.html:111
+msgid "Les zones indiquant le symbole * sont obligatoires"
+msgstr "Areas indicating the symbol * are mandatory"
+
+#: www/happenings/0/_new.html:23
+msgid "Lieu de l'événement"
+msgstr "Events location"
+
+#: www/happenings/1/_new.html:23
+msgid "Lieu du déjeuner"
+msgstr "Lunch place"
+
+#: controllers/happenings_ctrl.js:242 controllers/happenings_ctrl.js:265
+#: controllers/happenings_new_ctrl.js:96 controllers/registration_ctrl.js:181
+#: controllers/registration_ctrl.js:223 www/happenings/0/_list.html:25
+#: www/happenings/1/_list.html:25 www/places/list.html:3
+msgid "Lieux"
+msgstr "Places"
+
+#: www/happenings/0/_detail.html:54 www/happenings/1/_detail.html:90
+msgid "Liste des participants"
+msgstr "List of participants"
+
+#: controllers/contact_ctrl.js:19
+#, fuzzy
+#| msgid "Ajouter votre message"
+msgid "Merci pour votre message."
+msgstr "Add your message"
+
+#: www/cards/list.html:35
+msgid "Mes gains disponibles"
+msgstr "My gifts"
+
+#: controllers/forums_categories_ctrl.js:8
+msgid "Mes posts"
+msgstr "My posts"
+
+#: controllers/profile_ctrl.js:60
+msgid "Mode développeur activé"
+msgstr "Developer Mode Enabled"
+
+#: controllers/profile_ctrl.js:62
+msgid "Mode développeur désactivé"
+msgstr "Developer Mode disabled"
+
+#: controllers/happenings_new_ctrl.js:34
+msgid "Modification"
+msgstr "Modification"
+
+#: www/happenings/0/_detail.html:55 www/happenings/1/_detail.html:91
+msgid "Modifier"
+msgstr "Edit"
+
+#: www/profile.html:17
+msgid "Modifier mon profil"
+msgstr "Edit my profile"
+
+#: www/partials/0/sign-up.html:14 www/partials/1/sign-up.html:12
+#: www/registration.html:103
+msgid "Mot de passe"
+msgstr "Password"
+
+#: www/partials/0/sign-up.html:31 www/partials/1/sign-up.html:28
+msgid "Mot de passe oublié"
+msgstr "Lost Password"
+
+#: www/registration.html:35
+msgid "Nom"
+msgstr "Last name"
+
+#: controllers/happenings_new_ctrl.js:19
+msgid "Nombre de participants"
+msgstr "Number of participants"
+
+#: www/appointment/_new.html:26
+msgid "Nombre de personnes"
+msgstr "Number of persons"
+
+#: controllers/gift_ctrl.js:57 controllers/signup_ctrl.js:69
+msgid "Non disponible sur un navigateur"
+msgstr "Not available in a browser"
+
+#: controllers/shops_ctrl.js:95
+msgid ""
+"Notre application nécessite une connexion réseau pour fonctionner.\n"
+"        Modifiez vos réglages ou réessayez plus tard"
+msgstr ""
+"Our application requires a network connection to operate. Change your "
+"settings or try again later"
+
+#: controllers/forums_ctrl.js:28
+msgid "Nouveau"
+msgstr "New"
+
+#: controllers/forums_new_ctrl.js:14
+msgid "Nouveau message"
+msgstr "New message"
+
+#: www/newpass.html:15
+msgid "Nouveau mot de passe"
+msgstr "New Password"
+
+#: www/registration.html:18 www/registration.html:44
+msgid "N° mobile"
+msgstr "Mobile"
+
+#: controllers/appointment_schedule_ctrl.js:55
+#: controllers/forms_detail_ctrl.js:25 controllers/gift_ctrl.js:38
+#: controllers/happenings_ctrl.js:185 controllers/happenings_ctrl.js:224
+#: controllers/happenings_ctrl.js:243 controllers/happenings_new_ctrl.js:97
+#: controllers/registration_ctrl.js:182 controllers/registration_ctrl.js:224
+#: controllers/registration_ctrl.js:273 directives/pickers.js:164
+#: directives/pickers.js:61 directives/selectors.js:45 directives/tags.js:102
+msgid "OK"
+msgstr "OK"
+
+#: www/cards/list.html:72 www/sponsorship.html:28
+msgid "Par email"
+msgstr "By email"
+
+#: www/cards/list.html:77 www/sponsorship.html:33
+msgid "Par sms"
+msgstr "By text message"
+
+#: www/cards/list.html:69 www/sponsorship.html:25
+msgid "Parrainer mes amis"
+msgstr "Sponsor my friends"
+
+#: www/happenings/1/_detail.html:83
+msgid "Participer"
+msgstr "Participate"
+
+#: www/countries.html:3
+msgid "Pays"
+msgstr "Country"
+
+#: factories/fd_i18n.js:23
+msgid "Plus"
+msgstr "More"
+
+#: www/appstores.html:11 www/stores.html:9
+msgid "Plus simple,<br>plus rapide, plus facile"
+msgstr "More simple.<br>faster, easier"
+
+#: controllers/game_ctrl.js:8 www/appstores.html:21
+msgid "Plus tard"
+msgstr "Later"
+
+#: www/cards/list.html:83 www/sponsorship.html:39
+msgid "Pour mes amis :"
+msgstr "For my friends"
+
+#: www/cards/list.html:88 www/sponsorship.html:44
+msgid "Pour moi :"
+msgstr "For me :"
+
+#: www/cards/gift.html:3
+msgid "Pour {{currentGift.floor_points}} points"
+msgstr "For {{currentGift.floor_points}} points"
+
+#: www/items/_list.html:25 www/items/cart.html:26
+msgid "Prendre un rendez-vous"
+msgstr "Make an appointment"
+
+#: controllers/registration_ctrl.js:337
+msgid "Prendre une photo"
+msgstr "To take a picture"
+
+#: www/registration.html:38
+msgid "Prénom"
+msgstr "First name"
+
+#: www/survey.html:32
+msgid ""
+"Quelle est la probabilité pour que vous nous recommandiez à un ami ou un "
+"proche ?"
+msgstr ""
+"What is the probability that you recommend us to a friend or loved one?"
+
+#: www/countries.html:10 www/items/_list.html:9 www/items/cart.html:10
+#: www/places/list.html:10 www/places/popup.html:6 www/shops/locator.html:5
+#: www/shops/popup.html:6
+msgid "Recherche"
+msgstr "Search"
+
+#: www/admin/contacts.html:9
+msgid "Rechercher un contact"
+msgstr "Find a contact"
+
+#: controllers/appointment_new_ctrl.js:79
+msgid "Rendez-vous"
+msgstr "Appointments"
+
+#: www/items/cart.html:27
+msgid "Retirer de ma liste"
+msgstr "Remove from my list"
+
+#: app.js:34 www/iframe.html:14 www/tag/list.html:5
+msgid "Retour"
+msgstr "Back"
+
+#: www/game.html:45
+msgid "Règlement du jeu"
+msgstr "Rules of the game"
+
+#: www/profile.html:39 www/profile.html:48
+msgid "Règles de confidentialité"
+msgstr "Privacy Policy"
+
+#: controllers/appointment_new_ctrl.js:82
+msgid "Réservation"
+msgstr "Order"
+
+#: controllers/profile_ctrl.js:34
+msgid "Se déconnecter?"
+msgstr "Sign out?"
+
+#: controllers/happenings_detail_ctrl.js:157
+msgid "Suppression"
+msgstr "Deletion"
+
+#: controllers/happenings_detail_ctrl.js:161 www/happenings/0/_detail.html:56
+#: www/happenings/1/_detail.html:92
+msgid "Supprimer"
+msgstr "Remove"
+
+#: controllers/happenings_detail_ctrl.js:158
+msgid "Supprimer cet événement ?"
+msgstr "Delete this event?"
+
+#: www/registration.html:101
+msgid "Sécurité"
+msgstr "Security"
+
+#: www/shops/selector.html:5
+msgid "Sélectionnez un lieu"
+msgstr "Select a location"
+
+#: www/game.html:23
+msgid "Tentez votre chance pour gagner :"
+msgstr "Try your luck to win:"
+
+#: www/admin/message.html:9 www/contact.html:17
+msgid "Texte du message"
+msgstr "Message text"
+
+#: www/forums/new.html:5 www/happenings/0/_new.html:4
+#: www/happenings/1/_new.html:4
+msgid "Titre"
+msgstr "Title"
+
+#: www/happenings/0/_detail.html:37 www/happenings/1/_detail.html:40
+#: www/messages/_list.html:34
+msgid "Traduire"
+msgstr "Translate"
+
+#: controllers/signup_ctrl.js:78
+msgid "Un message vous a été envoyé à votre adresse email."
+msgstr "A message has been sent to your email address."
+
+#: controllers/registration_ctrl.js:160
+msgid "Une erreur est survenue avec l'envoi de votre avatar."
+msgstr "An error occurred while saving your avatar"
+
+#: controllers/signup_ctrl.js:81
+msgid "Une erreur est survenue veuillez vérifier votre saisie"
+msgstr "An error occured Please check your input"
+
+#: controllers/admin/message_ctrl.js:28 controllers/appointment_ctrl.js:69
+#: controllers/appointment_new_ctrl.js:104 controllers/contact_ctrl.js:24
+#: controllers/forms_detail_ctrl.js:100 controllers/forums_new_ctrl.js:35
+#: controllers/gift_ctrl.js:97 controllers/happenings_new_ctrl.js:126
+#: controllers/happenings_new_ctrl.js:138 controllers/registration_ctrl.js:175
+#: controllers/signup_ctrl.js:66 controllers/surveys_ctrl.js:37
+msgid "Une erreur est survenue."
+msgstr "An error occured"
+
+#: directives/camera.js:87
+msgid ""
+"Une erreur est survenue.\n"
+"{{error}}"
+msgstr "An error occured. {{error}}"
+
+#: www/dev-mode.html:14
+msgid "Url serveur"
+msgstr "Server url"
+
+#: www/gains/show.html:12
+msgid "Utilisé à {{consumedAt | date:'short' }}"
+msgstr "Used at {{consumedAt | Date: 'short'}}"
+
+#: www/cards/list.html:41 www/cards/list.html:51 www/messages/_list.html:54
+msgid "Valable jusqu'au {{date}}"
+msgstr "Valid until {{date}}"
+
+#: www/appointment/_new.html:38 www/dev-mode.html:36
+#: www/happenings/0/_new.html:51 www/happenings/1/_new.html:51
+#: www/newpass.html:21 www/registration.html:115 www/survey.html:38
+msgid "Valider"
+msgstr "Validate"
+
+#: www/forms/_detail.html:24
+msgid "Valider mes réponses"
+msgstr "Validate my answers"
+
+#: controllers/gift_ctrl.js:51
+msgid ""
+"Veuillez donner votre téléphone à votre interlocuteur afin de valider votre "
+"demande"
+msgstr "Please give your phone to your contact to validate your request"
+
+#: controllers/signup_ctrl.js:20
+#, fuzzy
+#| msgid "Veuillez renseigner votre mot de passe"
+msgid "Veuillez indiquer votre mot de passe"
+msgstr "Please enter your password"
+
+#: www/registration.html:80
+msgid "Ville"
+msgstr "City"
+
+#: controllers/appointment_ctrl.js:64 controllers/appointment_new_ctrl.js:98
+#: controllers/forms_detail_ctrl.js:98 controllers/forums_new_ctrl.js:28
+#: controllers/happenings_new_ctrl.js:122
+#: controllers/happenings_new_ctrl.js:134 controllers/surveys_ctrl.js:31
+msgid "Votre demande a été enregistrée."
+msgstr "Your request has been saved."
+
+#: www/forums/new.html:11
+msgid "Votre message"
+msgstr "Your message"
+
+#: controllers/signup_ctrl.js:85
+msgid "Vous devez renseigner l'email de votre compte ou nous contacter."
+msgstr "You must fill in the email address of your account or contact us."
+
+#: controllers/happenings_detail_ctrl.js:68
+msgid "aucun inscrit"
+msgstr "No registered"
+
+#: www/registration.html:15 www/registration.html:41
+msgid "e-mail"
+msgstr "email"
+
+#: www/partials/0/sign-up.html:11
+msgid "e-mail ou téléphone"
+msgstr "Email address or phone number"
+
+#: controllers/happenings_detail_ctrl.js:72
+msgid "inscrits"
+msgstr "registered"
+
+#: controllers/menu_ctrl.js:108
+msgid "maintenant"
+msgstr "now"
+
+#: controllers/happenings_detail_ctrl.js:70
+msgid "un inscrit"
+msgstr "A registrant"
+
+#: www/instagram/list.html:12
+msgid ""
+"{{instagram.profile.counts.media}} publications - {{instagram.profile.counts."
+"followed_by}} abonnés - {{instagram.profile.counts.follows}} suivis"
+msgstr ""
+"{{Instagram.profile.counts.media}} publications - {{instagram.profile.counts."
+"followed_by}} subscribers - {{instagram.profile.counts.follows}} followed"
+
+#: controllers/forums_categories_ctrl.js:55
+msgid "{{nb}} message"
+msgstr "{{nb}} message"
+
+#: controllers/forums_categories_ctrl.js:51
+msgid "{{nb}} messages"
+msgstr "{{nb}} messages"
+
+#: controllers/forums_ctrl.js:24
+msgid "{{nb}} rép."
+msgstr "{{nb}} ans."
+
+#: controllers/happenings_detail_ctrl.js:82
+msgid "{{quota}} participants max."
+msgstr "{{Quota}} max."
+
+#: controllers/happenings_ctrl.js:129
+msgid "{{quota}} participants maximum"
+msgstr "{{Quota}} maximum participants"
+
+#: www/contact.html:12
+msgid "À"
+msgstr "at"
+
+#: www/happenings/0/_detail.html:15 www/happenings/0/_list.html:56
+#: www/happenings/1/_list.html:56
+msgid "à"
+msgstr "at"
+
+#: www/happenings/0/_new.html:41 www/happenings/1/_new.html:41
+msgid "Ētre notifié de nouvelles inscriptions"
+msgstr "Be notified of new registrations"
+
+#~ msgid "Email"
+#~ msgstr "Email Address"
+
+#~ msgid "Email ou téléphone"
+#~ msgstr "Email or phone"
+
+#~ msgid "Je m'inscris avec avec mon email"
+#~ msgstr "I subscribe with my email"
+
+#~ msgid "S'inscrire"
+#~ msgstr "Sign up"
+
+#~ msgid "'Je ne participe pas'"
+#~ msgstr "'I'm not involved'"
+
+#~ msgid "Je préfère m'inscrire avec mon email"
+#~ msgstr "I prefer to register with my email"
+
+#~ msgid "Mes événements"
+#~ msgstr "My events"
+
+#~ msgid ""
+#~ "Fidelisa nécessite une connexion réseau pour fonctionner.\n"
+#~ "        Modifiez vos réglages ou réessayez plus tard"
+#~ msgstr ""
+#~ "Fidelisa requires a network connection to operate.\n"
+#~ "        Change your settings or try again later"
+
+#~ msgid "Fermer X"
+#~ msgstr ""
+#~ "C\n"
+#~ "lose X"
+
+#~ msgid ""
+#~ "Je te recommande\n"
+#~ "      {{ownerTitle}}\n"
+#~ "      {{ownerUrl}}\n"
+#~ "      En venant de ma part, tu profiteras de\n"
+#~ "      {{sponsoredGift}}.\n"
+#~ "      Pour bénéficier de ton cadeau, inscris-toi en suivant ce lien\n"
+#~ "      {{promoUrlCode}}"
+#~ msgstr ""
+#~ "I recommend you \\ n\n"
+#~ "       {{OwnerTitle}} \\ n\n"
+#~ "       {{OwnerUrl}} \\ n\n"
+#~ "       Coming from me, you will enjoy \\ n\n"
+#~ "       {{SponsoredGift}}. \\ N\n"
+#~ "       To receive your gift, subscribe by following this link\n"
+#~ "       {{PromoUrlCode}}"
+
+#~ msgid "Téléphone"
+#~ msgstr "Phone"
+
+#~ msgid ""
+#~ "Confirmé le {{secureDate(appointment.validated_at, \"dd/MM/yyyy\", "
+#~ "appointment.timezone)}}"
+#~ msgstr ""
+#~ "Confirmed on  {{secureDate(appointment.validated_at, \"dd/MM/yyyy\", "
+#~ "appointment.timezone)}}"
+
+#~ msgid "Jeu valable jusqu'au {{game.expired_at | date:'dd/MM/yyyy'}}"
+#~ msgstr "Game valid until {{game.expired_at | Date: 'dd / MM / yyyy'}}"
+
+#~ msgid "Valable jusqu'au {{card.win_gift.expired_at | date:'dd/MM/yyyy'}}"
+#~ msgstr "Valid until {{card.win_gift.expired_at | Date: 'dd / MM / yyyy'}}"
+
+#~ msgid "Valable jusqu'au {{gain.expired_at  | date:'dd/MM/yyyy'}}"
+#~ msgstr "Valid until {{win.expired_at | Date: 'dd / MM / yyyy'}}"

@@ -1,0 +1,17 @@
+
+<div>
+  <div class="item tabs tabs-secondary tabs-icon-center force-border" >
+    <a class="tab-item" ng-click="takePicture(true)" ng-if="withCamera">
+      <i class="icon ion-camera"></i>
+    </a>
+    <a class="tab-item" ng-click="takePicture(false)">
+      <i class="icon ion-image"></i>
+    </a>
+    <a class="tab-item" ng-click="removePicture()" ng-if="model">
+      <i class="icon ion-trash-a"></i>
+    </a>
+  </div>
+  <div class="item text-center item-body item-image-picker" ng-show="withImage">
+    <img style=" width: 80%" ng-src="{{model}}">
+  </div>
+</div>

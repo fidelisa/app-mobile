@@ -1,0 +1,21 @@
+
+<ion-view view-title="{{headtitle}}">
+
+  <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear" ng-click="showHome()">
+        <i class="icon ion-toggle"></i>
+      </button>
+  </ion-nav-buttons>
+
+  <ion-content id="admin_home">
+    <div class="list">
+      <div class="item item-icon-left item-icon-right" class="item-icon-left"
+        ng-click="onMenuAdminClick(tab)" ng-show="tab.active" ng-repeat="tab in adminViews">
+        <i class="icon {{tab.icon}}"></i>
+        {{tab.name}}
+        <i class="icon fd-chevron ion-chevron-right"></i>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

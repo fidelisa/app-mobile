@@ -1,0 +1,48 @@
+<ion-modal-view ng-controller="DevModeCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>DevMode</h1>
+  </ion-header-bar>
+  <ion-content
+    <div ng-class="list">
+      <div class="item text-center">
+        <h2 translate>App config</h2>
+      </div>
+
+
+
+      <label class="item item-input">
+        <input type="text" ng-model="app.host" placeholder="{{'Url serveur'|translate}}">
+      </label>
+
+      <div class="item item-body" >
+        <div class="padding">
+          <div class="text-center">
+            <div class="text-button" ng-click="testGeofence(1)">Test Geofencing enter</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-button" ng-click="testGeofence(2)">Test Geofencing exit</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-button" ng-click="removeHost()">Delete specific host</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item item-body">
+        <div class="padding">
+          <button class="button button-block" ng-click="valideDevMode()" translate>
+            Valider
+          </button>
+
+          <button class="button button-block" ng-click="closeDevMode()" translate>
+            Annuler
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-modal-view>

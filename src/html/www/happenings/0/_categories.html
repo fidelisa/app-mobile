@@ -1,0 +1,15 @@
+<ion-content ng-show="logged">
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-class="list" ng-repeat="category in categories | orderBy:['-follow', 'sort_order', 'title']">
+        <div class="item item-happenings-category" ng-click="showDetail(category)" >
+          <img class="fd-image" fd-image-src="{{category.image_id}}" ng-if="category.image_id">
+          <span
+            class="icon fd-favor" ng-class="{'ion-ios-star': category.follow,'ion-ios-star-outline': !category.follow}"
+            ng-click="favoriteToggle(category); $event.stopPropagation();">
+          </span>
+          <div class="fd-title" ng-show="!category.image_id">{{category.title}}</div>
+        </div>
+    </div>
+</ion-content>

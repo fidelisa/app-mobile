@@ -1,0 +1,22 @@
+<ion-modal-view ng-controller="TagsCtrl">
+  <ion-header-bar>
+    <button ng-if="!showNone" class="button back-button buttons button-clear header-item" ng-click="pickTag()">
+      <i class="icon ion-chevron-left"></i>
+      <span translate>Retour</span>
+    </button>
+
+    <h1 class="title">{{name}}</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <div ng-class="list" >
+      <div ng-if="showNone" class="item" ng-click="pickTag()" translate>Aucun</div>
+      <div class="item item-icon-right" ng-click="pickTag(tag.uuid)" ng-style='tag.style' ng-repeat="tag in tags">
+        <i class="icon" ng-class="buttonStyle(tag)"></i>
+        {{tag.title}}
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

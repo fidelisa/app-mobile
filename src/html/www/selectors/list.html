@@ -1,0 +1,9 @@
+<div class="item item-input item-icon-right fd-select" ng-show='list.length>1' ng-click="selectList()">
+  <div ng-repeat="c in list" ng-show="c.uuid==model">
+    {{c.title}}
+  </div>
+  <div class="input-label" ng-hide="selected">
+    {{label}}
+  </div>
+  <span class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+</div>

@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-refresher on-refresh="onRefresh()">
+  </ion-refresher>
+
+  <div ng-class="list" ng-repeat="category in categories | orderBy:['-follow', 'title']">
+      <div class="item item-items-category" ng-click="showDetail(category)" >
+        <img class="fd-image" fd-image-src="{{category.image_id}}" ng-if="category.image_id">
+        <div class="fd-title" ng-if="!category.image_id">{{category.title}}</div>
+      </div>
+  </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-modal-view ng-controller="SurveysNewCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Enquête satisfaction</h1>
+  </ion-header-bar>
+  <ion-content delegate-handle="surveyScroll">
+
+    <div class="list">
+
+      <div class="item item-input item-select fd-select" ng-show='shops.length>1'>
+        <select ng-model="survey.vendor_id">
+          <option ng-repeat="shop in shops" value='{{shop.uuid}}'>{{shop.title}}</option>
+        </select>
+      </div>
+
+      <div class="item item-text-wrap">
+        <h2 translate>Globalement, diriez-vous que vous êtes...</h2>
+      </div>
+
+      <div class="item item-body survey-tabs" ng-model="survey.satisfaction"></div>
+
+      <div class="item item-text-wrap">
+        <h2 translate>Comment évaluez-vous les points suivants ?</h2>
+      </div>
+
+      <div class="item item-body survey-stars" ng-model="survey.relation" name="{{'L\'accueil'|translate}}"></div>
+
+      <div class="item  item-body survey-stars" ng-model="survey.home" name="{{'La relation'|translate}}" ></div>
+
+      <div class="item item-body survey-stars" ng-model="survey.quality" name="{{'Le rapport qualité/prix'|translate}}" ></div>
+
+      <div class="item item-text-wrap">
+        <h2 translate>Quelle est la probabilité pour que vous nous recommandiez à un ami ou un proche ?</h2>
+      </div>
+
+      <div class="item survey-ranges" ng-model="survey.recommand"></div>
+
+      <div class="item item-body fd-two-buttons">
+        <button class="button button-block" ng-click="sendSurvey()" translate>
+          Valider
+        </button>
+
+        <button class="button button-block" ng-click="closeSurvey()" translate>
+          Annuler
+        </button>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-modal-view>

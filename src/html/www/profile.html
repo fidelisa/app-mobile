@@ -1,0 +1,56 @@
+<ion-view view-title={{getTitleString('profile')}}>
+  <ion-content ng-show="logged">
+    <div ng-class="list">
+      <div class="item item-avatar-right">
+        <fd-avatar fd-image="user.image_id"></fd-avatar>
+        <div class="form-title" ng-click="devMod()">{{user.first_name}} {{user.last_name}}</div>
+      </div>
+      <ion-item class="item-icon-left" ng-show="user.phone">
+        <i class="icon ion-iphone" ></i>{{user.phone}}&nbsp;
+      </ion-item>
+      <div class="item item-icon-left" ng-show="user.email">
+        <i class="icon ion-ios-email-outline" ></i>{{user.email}}&nbsp;
+      </div>
+
+      <div class="item item-body" >
+        <div class="padding">
+          <div ng-show="logged" class="button button-block" ng-click="modifyProfile()" translate>
+            Modifier mon profil
+          </div>
+          <div ng-show="logged" class="button button-block" ng-click="signOut()" translate>
+            Déconnexion
+          </div>
+
+          <div style="padding-top:10px"></div>
+
+          <div ng-show="logged" class="text-center">
+            <div class="text-button" ng-click="newpass()" translate>Changer de mot de passe</div>
+          </div>
+
+          <div class="text-center" ng-if="withLocalization">
+            <div class="text-button" ng-click="changeLang()" translate>Changer de langue</div>
+          </div>
+
+          <div class="text-center" ng-if="devMode">
+            <div class="text-button" ng-click="openDevModeModal()">Developper Mode</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-button" ng-click="privacyPolicy()" translate>Règles de confidentialité</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div ng-class="list" ng-show="showPolicy" ng-click="privacyPolicy()">
+      <div class="item item-body" >
+        <h2 translate>Règles de confidentialité</h2>
+        <div ng-bind-html="privacyPolicyText"></div>
+      </div>
+    </div>
+  </ion-content>
+
+  <div ng-include="FdTpl['sign-up']"></div>
+
+</ion-view>

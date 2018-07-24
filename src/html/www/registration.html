@@ -1,0 +1,136 @@
+<ion-modal-view ng-controller="RegistrationCtrl">
+  <ion-header-bar ng-hide="{{hidenavbar}}">
+    <div class="title title-center header-item" ng-bind-html="headtitle"></div>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="list">
+      <div class="item text-center">
+        <h2 translate>Inscription</h2>
+      </div>
+
+      <div class="item item-divider  fd-big-divider" translate>Identifiant</div>
+
+      <label class="item item-input" ng-if="customer.mailChoice">
+        <input type="email" ng-model="customer.email" placeholder="{{'e-mail'|translate}} *">
+      </label>
+      <div class="item item-input" ng-if="!customer.mailChoice">
+        <input type="tel" ng-model="customer.phone" placeholder="{{'N° mobile'|translate}} *">
+        <button  ng-click="openCountries()">{{customer.country}}</button>
+      </div>
+
+      <div class="item item-toggle">
+         <span class="input-label fd-label" translate>Je m'inscris avec mon e-mail</span>
+         <label class="toggle">
+           <input type="checkbox" ng-model="customer.mailChoice">
+           <div class="track fdtrack">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </div>
+
+      <div ng-show="showSection.base">
+        <div class="item item-divider fd-big-divider" translate>Informations personnelles</div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.last_name"  placeholder="{{'Nom'|translate}} *">
+        </div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.first_name" placeholder="{{'Prénom'|translate}}">
+        </div>
+        <label class="item item-input" ng-if="!customer.mailChoice">
+          <input type="email" ng-model="customer.email" placeholder="{{'e-mail'|translate}}">
+        </label>
+        <div class="item item-input" ng-if="customer.mailChoice">
+          <input type="tel" ng-model="customer.phone" placeholder="{{'N° mobile'|translate}}">
+          <button ng-click="openCountries()">{{customer.country}}</button>
+        </div>
+
+        <div class="item item-avatar-right" ng-click="takePicture()">
+          <img ng-if="!showRemoteImage()" ng-src="{{customerImageUri}}">
+          <img ng-if="showRemoteImage()" fd-image-src="{{user.image_id}}">
+          <div class="input-label">Image du profil</div>
+        </div>
+
+        <!-- Lieux -->
+        <div class="item item-input fd-select" ng-show='shops.length>1' ng-click="selectShop()">
+          <div ng-repeat="c in shops" class="item-icon-right" ng-show="c.uuid==customer.favorite_vendor_id">
+            {{c.title}}
+            <span class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+          </div>
+        </div>
+
+        <div ng-if="showTags" class="item item-divider" translate>Centres d'intérêts</div>
+        <fd-tag ng-if="showTags" class="item item-icon-right" style="padding-top:5px;padding-bottom:5px;" ng-model="customer.tag_ids" fd-tags-options="customers"></fd-tag>
+
+      </div>
+
+
+      <div ng-show="showSection.address">
+        <div class="item item-divider fd-big-divider" translate>Adresse</div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.address1" placeholder="{{'Adresse 1'|translate}}">
+        </div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.address2" placeholder="{{'Adresse 2'|translate}}">
+        </div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.zipcode" placeholder="{{'Code postal'|translate}}">
+        </div>
+        <div class="item item-input">
+          <input type="text" ng-model="customer.city" placeholder="{{'Ville'|translate}}">
+        </div>
+      </div>
+
+      <div ng-show="showSection.perso">
+        <div class="item item-divider fd-big-divider" translate>Informations complémentaires</div>
+        <div class="item item-input">
+          <div class="input-label input-black" ng-click="openPicker()" ng-show="birthdayOK">{{birthday  | date:'dd MMM yyyy'}}</div>
+          <div class="input-label" ng-click="openPicker()" ng-hide="birthdayOK">Date de naissance</div>
+        </div>
+
+        <div class="item item-input" ng-click="toggleGender()">
+          <div class="input-label">Sexe</div>
+          <span class="fd-gender">
+            {{genderText}}
+          </span>
+        </div>
+
+      </div>
+
+      <div ng-show="showSection.secure">
+        <div class="item item-divider fd-big-divider" translate>Sécurité</div>
+        <div class="item item-input">
+          <input type="password" ng-model="customer.password"  placeholder="{{'Mot de passe'|translate}}">
+        </div>
+
+        <div ng-if="false" class="item item-input">
+          <input type="password" ng-model="customer.confirmation_password" placeholder="{{'Confirmation mot de passe'|translate}}">
+        </div>
+      </div>
+
+      <div class="item item-divider fd-small-center-item">{{'Les zones indiquant le symbole * sont obligatoires'|translate}}</div>
+
+
+      <div class="item item-body fd-two-buttons">
+        <button class="button button-block" ng-click="register()" ng-disabled="customerInvalid()" translate>
+          Valider
+        </button>
+        <button class="button button-block" ng-click="closeRegistrationModal()" ng-hide="customer.codepromo" translate>
+          Annuler
+        </button>
+      </div>
+
+      <div ng-hide="showPolicy" class="item item-divider fd-small-center-item" ng-click="privacyPolicy()" translate>Règles de confidentialité</div>
+
+      <div ng-class="list" ng-show="showPolicy" ng-click="privacyPolicy()">
+        <div class="item item-body">
+          <h2 translate>Règles de confidentialité</h2>
+          <div ng-bind-html="privacyPolicyText"></div>
+        </div>
+      </div>
+    
+
+    </div>
+
+  </ion-content>
+</ion-modal-view>

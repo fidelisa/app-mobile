@@ -1,0 +1,39 @@
+
+
+$base-color:               "<%= colors.base.color %>" !default;
+$base-background-color :   "<%= colors.base.bgColor %>" !default;
+$modal-bg-color:           "<%= colors.base.bgColor %>" !default;
+$button-default-bg:        "<%= colors.button.bgColor %>" !default;
+$button-default-text:      "<%= colors.button.color %>" !default;
+$button-default-border:    "<%= colors.button.border %>" !default;
+$button-default-radius:    "10px";
+$text-button-default-text: "<% if (colors.textButton) {%><%=colors.textButton.color%><%} else {%><%=colors.item.color%><%} %>" !default;
+$button-add-color:         "<% if (colors.addButton && colors.addButton.color )   {%><%=colors.addButton.color%><%} else {%><%=colors.button.bgColor%><%} %>" !default;
+$button-add-bg:            "<% if (colors.addButton && colors.addButton.bgColor ) {%><%=colors.addButton.bgColor%><%} else {%>rgba(255,255,255,1)<%} %>" !default;
+$bar-default-bg:           "<%= colors.bar.bgColor %>" !default;
+$bar-default-text:         "<%= colors.bar.color %>" !default;
+$bar-default-border:       "<%= colors.bar.border %>" !default;
+$item-default-bg:          "<%= colors.item.bgColor %>" !default;
+$item-default-border:      "<%= colors.item.border %>" !default;
+$item-default-text:        "<%= colors.item.color %>" !default;
+$tabs-default-bg:          "<%= colors.tabs.bgColor %>" !default;
+$tabs-default-border:      "<%= colors.tabs.border %>" !default;
+$tabs-default-text:        "<%= colors.tabs.color %>" !default;
+
+$tabs-active-bg:          "<%= colors.tabs.active ? colors.tabs.active.bgColor : colors.tabs.bgColor %>" !default;
+// $tabs-active-border:      "<%= colors.tabs.active.border %>" !default;
+// $tabs-active-text:        "<%= colors.tabs.active.color %>" !default;
+
+$input-label-color:        "<%= colors.input.labelColor %>" !default;
+$input-color:              "<%= colors.input.color %>"  !default;
+$input-color-placeholder:  "<%= colors.input.placeholder %>" !default;
+
+$item-divider-bg:          rgba(255, 255, 255, 0.6) !default;
+$item-divider-color:       "<%= colors.item.color %>" !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/fonts" !default;
+
+// Include all of Ionic
+@import "./ionic/scss/ionic";
+@import "./fd/fd";

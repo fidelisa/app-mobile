@@ -1,0 +1,19 @@
+<ion-nav-bar class="">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>
+
+<ion-tabs ng-class="{'tabs-item-hide': hidenavbar}" class="tabs-icon-top">
+    <% _.forEach(tabs, function(tab, idx) { %>
+        <fd-tab name="<%= tab.name %>" icon="<%= tab.icon %>">
+        </fd-tab>
+        <% }); %>
+
+            <ion-tab ng-if="showMore()" hidden="{{hideTab('more')}}" href="#/tab/more" title="{{tabs.more.title}}" icon="{{tabs.more.icon}}">
+                <ion-nav-view name="tab-more"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab hidden="true" title="Admin" icon="ion-locked" href="#/tab/adminhome">
+                <ion-nav-view name="tab-admin"></ion-nav-view>
+            </ion-tab>
+</ion-tabs>

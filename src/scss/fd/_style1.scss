@@ -1,0 +1,126 @@
+$s1_darkblue: #3A3E57;
+$s1_yellow: #E9C732;
+$s1_grey: #989898;
+$s1_lightblue: #67BFC1;
+$s1_greenblue: #4B9292;
+$s1_purple: #3D4258;
+
+.s1_purple_button{
+  background-color: $s1_purple;
+  border-color: $s1_purple;
+}
+
+.item-happenings {
+  .s1_shop {
+    font-size: 110%;
+    font-weight: 500;
+    color: $s1_yellow;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .s1_place {
+    font-size: 16px;
+    font-weight: 400;
+    color: $s1_grey;
+    opacity: 1;
+  }
+}
+
+.item-happening {
+
+  .s1_subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: $s1_grey;
+    margin-top: 0px;
+    margin-bottom: 7px;
+  }
+
+  .s1_date {
+    text-transform: capitalize;
+    //letter-spacing: 1px;
+    color: $s1_darkblue;
+    font-size: 105%;
+    font-weight: 600;
+  }
+
+  .s1_duration {
+    color: $s1_grey;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .s1_shop {
+    font-size: 115%;
+    font-weight: 600;
+    color: $s1_yellow;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .s1_place {
+    font-size: 16px;
+    font-weight: 400;
+    color: $s1_grey;
+    opacity: 1;
+  }
+
+  .s1_title {
+    color: $s1_darkblue;
+    font-size: 120%;
+    font-weight: 500;
+    font-style: italic;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .s1_customer {
+    font-size: 16px;
+    color: $s1_greenblue;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .s1_participants {
+    font-size: 13px;
+    color: $s1_grey;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .s1_icon_clock {
+    color: $s1_darkblue;
+    font-size: 32px;
+    padding-right: 5px;
+  }
+
+  .s1_icon_locate {
+    color: $s1_yellow;
+    font-size: 32px;
+    padding-right: 5px;
+  }
+
+  .s1_icon_chat {
+    color: $s1_lightblue;
+    font-size: 32px;
+    padding-right: 5px;
+  }
+
+  .s1_icon_person {
+    color: $s1_greenblue;
+    font-size: 32px;
+    padding-right: 5px;
+  }
+
+}

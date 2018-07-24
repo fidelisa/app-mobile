@@ -1,0 +1,4 @@
+<ion-view view-title={{title}}>
+    <div ng-show="showCategories" ng-include="FdTpl['happenings']['_categories']"></div>
+    <div ng-hide="showCategories" ng-include="FdTpl['happenings']['_list']" ng-controller="HappeningsCtrl"></div>    
+</ion-view>

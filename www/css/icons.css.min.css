@@ -1,0 +1,1 @@
+<% icons.forEach(function(icon,idx){%> .fd-<%= icon.uuid %> { background-size:100% 100%;background-repeat:no-repeat;border:none;background-image:url('../img/icons/<%= icon.uuid %>.svg');min-width:32px}); %>

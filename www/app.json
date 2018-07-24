@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist@1.0.0",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
+
+    "cordova-plugin-dialogs",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-inappbrowser",
+    "https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "https://github.com/katzer/cordova-plugin-email-composer.git",
+
+    "https://github.com/ypelud/cordova-plugin-social-message.git",
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "phonegap-plugin-push",
+    "cordova-plugin-geolocation",
+
+    "https://github.com/Paldom/PinDialog.git",
+
+    "https://github.com/petermetz/cordova-plugin-ibeacon.git",
+
+  ],
+  "sass": false
+}

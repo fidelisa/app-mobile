@@ -1,0 +1,23 @@
+<ion-view view-title="{{headtitle}}">
+    <ion-content>
+
+        <div ng-class="list">
+
+            <fd-camera ng-model="message.imageUri"></fd-camera>
+
+            <div class="item item-input">
+                <textarea class='item-message-textarea' placeholder="{{'Texte du message'|translate}}" ng-model="message.alert"></textarea>
+            </div>
+
+
+            <div class="item item-body">
+              <button class="button button-block" ng-click="doSend()" translate>
+                Envoyer le message
+              </button>
+              <div class="fd-sublabel">Le message sera envoyé à tous les contacts</div>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

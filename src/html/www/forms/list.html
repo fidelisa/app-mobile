@@ -1,0 +1,14 @@
+<ion-view view-title={{getTitleString('forms')}}>
+  <ion-content>
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-class="list" ng-repeat="form in forms" >
+
+      <div class="item" ng-click="showDetail($index)">
+        <p>{{form.title}}</p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

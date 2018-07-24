@@ -1,0 +1,208 @@
+.list2 {
+  border-color: $item-default-border;
+  border-top: 2px;
+  border-style: solid;
+}
+
+.bar-subheader
+{
+
+  .list {
+    width: 100%;
+    margin: 5px 5px;
+  }
+
+  .input-search {
+    margin: 3px;
+    width: 100%;
+    border-radius: 2px;
+    border-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &.bar-search {
+    input {
+      height: 20px;
+    }
+    .item {
+      border-color: transparent;
+    }
+  }
+}
+
+
+.poster-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.item-thumbnail-left > svg:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.item-avatar > svg:first-child {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.item-category {
+  height: 108px;
+}
+
+.fd-translate {
+  margin-top: 10px;
+  font-size: 85%;
+}
+
+.fd-gender {
+  color: inherit;
+  position: absolute;
+  right: 10px;
+  padding: 7px 10px 7px 0px;
+  font-size: 14px;
+}
+
+.fd-barsearch {
+  margin: 5px;
+}
+
+.fd-tabs-title {
+  height: 60px !important;
+  a {
+    @include display-flex();
+    @include align-items(center);
+    @include flex-flow(column);
+    //height: 55px;
+    //margin-top: 5px;
+  }
+  div {
+    margin-top: -10px;
+    font-size: 75%;
+  }
+
+  .tab-item {
+    opacity: 0.5;
+  }
+
+  .tab-item.active {
+    opacity: 1;
+  }
+
+  .icon .active {
+    font-weight: bold;
+  }
+
+}
+
+.fd-bar-content {
+  width: 100%;
+  height: 35px;
+  background-color: $bar-default-bg;
+
+  .fd-bar {
+    width: 100%;
+    @include flex(1);
+    @include display-flex();
+    @include align-items(start-flex);
+    // @include justify-content(center);
+  }
+
+  .fd-bar > .fd-small-icon {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+  .fd-bar > .button {
+    @include flex(1);
+    height: 20px;
+    background-color: $bar-default-bg;
+    border-color: transparent;
+    color: $bar-default-text;
+    font-size: 110%;
+    // display: block;
+
+    overflow: hidden;
+
+    // padding: 0 16px;
+
+    // width: 0;
+
+    border-width: 1px 0px 1px 1px;
+    border-radius: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+
+    &:first-child {
+      border-radius: $button-border-radius 0px 0px $button-border-radius;
+    }
+    &:last-child {
+      border-right-width: 1px;
+      border-radius: 0px $button-border-radius $button-border-radius 0px;
+    }
+    &:only-child {
+      border-radius: $button-border-radius;
+    }
+  }
+}
+
+.fd-bar-subheader {
+  //top: 80px !important;
+}
+
+
+.fd-two-buttons {
+
+  @include display-flex();
+  @include align-content(center);
+  @include flex-flow(row);
+
+  .button {
+
+    &:first-child {
+      margin-right: 6px;
+    }
+
+    &:last-child {
+      margin-left: 6px;
+    }
+  }
+
+}
+
+.fd-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.fd-chevron {
+  font-size: 30px;
+  font-weight: 600;
+  color: $item-default-text;
+  opacity: 0.6;
+}
+
+.fd-small-center-item {
+  text-align: center;
+  font-size: 80%;
+  opacity: 0.8;
+}

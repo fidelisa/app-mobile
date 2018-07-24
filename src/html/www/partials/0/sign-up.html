@@ -1,0 +1,57 @@
+<ion-content ng-controller="SignUpCtrl" ng-hide="logged">
+
+  <div ng-class="list">
+    <div class="item text-center" ng-click="devMod()">
+      <h2 translate>Connexion</h2>
+    </div>
+
+
+
+    <label class="item item-input">
+      <input type="text" ng-model="user.login" placeholder="{{'e-mail ou téléphone'|translate}}" on-return='nextPass()'>
+    </label>
+    <label class="item item-input" ng-show="showPassword">
+      <input id="pass" type="password" ng-model="user.password" placeholder="{{'Mot de passe'|translate}}" return-close='true'>
+    </label>
+    <div class="item item-body">
+      <div class="padding">
+        <button class="button button-block" ng-click="signUp()" translate>
+          Connexion
+        </button>
+
+        <button ng-if="showFacebook()" class="button button-block fd-facebook" ng-click="signWithFaceBook()">
+          <div class='fd-facebook-icon'>
+            <span class="icon ion-social-facebook"></span>
+          </div>
+          {{'Connexion via Facebook'|translate}}
+        </button>
+
+        <button class="button button-block" ng-click="openModal()" translate>
+          Inscription
+        </button>
+
+        <div class="text-button" ng-click="openForgottenPassword()" translate>Mot de passe oublié</div>
+        <div class="text-button" ng-if="withLocalization" ng-click="changeLang()" translate>Changer de langue</div>
+
+        <button class="button button-block" ng-if="devMode" ng-click="openDevModeModal()" translate>
+          DevMode
+        </button>
+
+        <div class="text-center">
+          <div class="text-button" ng-click="privacyPolicy()" translate>Règles de confidentialité</div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div ng-class="list" ng-show="showPolicy" ng-click="privacyPolicy()">
+    <div class="item item-body">
+      <h2 translate>Règles de confidentialité</h2>
+      <div ng-bind-html="privacyPolicyText"></div>
+    </div>
+  </div>
+
+
+</ion-content>

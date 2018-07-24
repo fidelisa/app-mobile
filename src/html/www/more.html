@@ -1,0 +1,14 @@
+<ion-view view-title="{{headtitle}}">
+  <ion-nav-title>
+    <fd-title />
+  </ion-nav-title>
+  
+  <ion-content>
+    <div class="list">
+      <div class="item item-icon-left item-icon-right" class="item-icon-left" ng-click="onMenuMoreClick(tab, tab.link)" ng-repeat="tab in moreTabsSort">
+        <i class="icon {{tab.icon}}"></i>
+        {{getTitleString(tab.name)}}
+        <i class="icon ion-ios-arrow-right"></i>
+      </div>
+    </div>
+</ion-view>

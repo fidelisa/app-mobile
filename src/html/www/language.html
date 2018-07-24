@@ -1,0 +1,19 @@
+<ion-modal-view ng-controller="LanguageCtrl">
+  <ion-header-bar>
+    <div class="title title-center header-item" style="left: 45px; right: 45px;">
+      <fd-title />
+    </div>
+  </ion-header-bar>
+
+  <ion-content>
+
+    <div ng-class="list" ng-repeat="lang in languages">
+
+        <div class="item item-icon-right fd-lang" ng-click="changeLang(lang)">
+          <div class='fd-lang-img'><img ng-src="{{lang.img}}"></div>
+          <div class='fd-lang-title'>{{lang.name}}</div>
+          <i ng-if="!active(lang)" class="icon ion-ios-circle-outline"></i>
+          <i ng-if="active(lang)" class="icon ion-ios-checkmark-outline"></i>
+        </div>
+  </ion-content>
+</ion-modal-view>

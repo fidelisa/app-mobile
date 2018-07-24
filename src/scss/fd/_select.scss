@@ -1,0 +1,16 @@
+.fd-select select {
+  position: inherit;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 30px;
+  width: 100%;
+  direction: inherit;
+  text-align: center;
+  padding: 0;
+  max-width: 100%
+}
+
+.fd-select select .tc {
+  text-align: center;
+}

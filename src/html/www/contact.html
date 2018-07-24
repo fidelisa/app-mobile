@@ -1,0 +1,29 @@
+<ion-view view-title={{getTitleString('contact')}}>
+
+  <ion-content>
+
+      <div ng-class="list">
+
+          <div class="item item-body fd-message-header-start">
+            <span class="fd-message-header-label">{{'De'|translate}}</span>
+            <span class="fd-message-header-content">{{user.first_name}} {{user.last_name}}</span>
+          </div>
+          <div class="item item-body fd-message-header-end">
+            <span class="fd-message-header-label">{{'À'|translate}}</span>
+            <span class="fd-message-header-content">{{appName}}</span>
+          </div>
+
+          <div class="item item-input">
+              <textarea class='item-message-textarea' placeholder="{{'Texte du message'|translate}}" ng-model="feedback.body"></textarea>
+          </div>
+
+          <div class="item item-body">
+            <button class="button button-block" ng-click="doSend()" translate>
+              Envoyer
+            </button>
+          </div>
+
+      </div>
+
+  </ion-content>
+</ion-view>

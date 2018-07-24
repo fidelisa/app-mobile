@@ -1,0 +1,51 @@
+<ion-modal-view ng-controller="GameCtrl">
+  <ion-header-bar>
+    <div class="title title-center header-item">
+      <span class="nav-bar-title">
+        <fd-title />
+      </div>
+    </div>
+  </ion-header-bar>
+
+  <ion-content>
+
+    <div ng-class="list">
+
+      <div class="item text-center">
+        <h2 translate>Jouez à notre jeu</h2>
+      </div>
+
+
+      <div class="item item-body text-center">
+
+        <fd-slotgame class="sg-base" fd-play="{{play}}" fd-win="{{win}}" fd-ended-game="endedGame()" fd-bg-Image="{{host}}/api/images/slot_image/{{game.uuid}}"></fd-slotgame>
+
+        <div class="sg-try" translate>Tentez votre chance pour gagner :</div>
+        <img class="gift-image" fd-image-src="{{game.gift_image_id}}" ng-show="game.gift_image_id">
+        <div class="gift-text">{{game.gift}}</div>
+
+
+        <div class="padding">
+          <h2 ng-show="message" class='text-center'>{{message}}</h2>
+          <button class="button button-block" ng-hide="message" ng-disabled="play" ng-click="playGameModal()" translate>Jouer</button>
+          <button class="button button-block" ng-click="closeGameModal()">{{closeGameName}}</button>
+        </div>
+
+        <p ng-show="game.expired_at"
+           translate-params-date="game.expired_at | date:'shortDate'"
+           translate>Jeu valable jusqu'au {{date}}</p>
+        <p></p>
+        <p class="text-button" ng-click="toggleLegal()">Règlement du jeu</p>
+
+      </div>
+    </div>
+
+    <div ng-class="list" ng-show="showLegal">
+      <div class="item item-body" >
+        <h2 translate>Règlement du jeu</h2>
+        <div ng-bind-html="game.legal_statement"></div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

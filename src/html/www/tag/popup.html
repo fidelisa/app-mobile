@@ -1,0 +1,8 @@
+<div ng-class="list" ng-controller="TagsCtrl" >
+  <div ng-if="!multi" class="item" ng-click="pickTag()" translate>Aucun</div>
+  <div class="item item-icon-right" ng-click="pickTag(tag.uuid)" ng-style='tag.style' ng-repeat="tag in tags">
+    <i class="icon" ng-class="buttonStyle(tag)" ></i>
+    {{tag.title}}
+  </div>
+
+</div>

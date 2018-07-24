@@ -1,0 +1,22 @@
+<div class='fd-selector-wrapper'>
+  <div ng-if="!favoriteShop" class="fd-selector-favorite">
+    <div class="fd-selector-card">
+    </div>
+    <h2 translate>Sélectionnez un lieu</h2>
+  </div>
+  <div ng-if="favoriteShop" class="fd-selector-favorite">
+    <div class="fd-selector-card">
+      <img fd-image-src="{{favoriteShop.image_id}}" fd-image-size=100 ng-show="{{showImage(favoriteShop.image_id)}}">
+    </div>
+    <p>{{favoriteShop.title}}</p>
+  </div>
+
+  <ion-content class="fd-selector-header">
+    <div class="fd-selector">
+      <div ng-repeat="shop in shops | orderBy:['title']:false" class="fd-selector-card" ng-click="favoriteToggle(shop)">
+        <img fd-image-src="{{shop.image_id}}" fd-image-size=80 ng-show="{{showImage(shop.image_id)}}">
+        <p>{{shop.title}}</p>
+      </div>
+    </div>
+  </ion-content>
+</div>

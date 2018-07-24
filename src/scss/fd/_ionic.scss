@@ -1,0 +1,108 @@
+.item.force-border {
+  border-top: 1px solid $item-default-border !important;
+}
+
+.item h1, .item h2, .item p {
+  color:$item-default-text;
+}
+
+.form-title {
+  color:$item-default-text;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.input-label {
+  color: $input-color-placeholder;
+  font-size: 14px;
+}
+
+.item-select select {
+  color: $input-color;
+}
+
+.text-button {
+    color: $text-button-default-text !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    margin: 15px !important;
+    font-weight: 400 !important;
+}
+
+/* Override ionic styles */
+.pane, .view, .modal {
+  background-size: "<%= colors.imageSize %>";
+  background-image: url("<%= colors.imageBg %>");
+  background-position:50% 50%;
+}
+
+.nav-bar-title {
+  img {
+    // height: 100%;
+  }
+}
+.card, .list-inset {
+  margin: 10px 10px;
+  background-color: transparent;
+}
+
+.placeholder-icon {
+  color: $input-color-placeholder;
+}
+
+.bar .button.button-clear {
+  color: $bar-default-text;
+}
+
+.menu {
+  background-color: $tabs-default-bg;
+}
+
+.menu .item-complex .item-content, .menu  .item-radio .item-content {
+  background-color: $tabs-default-bg;
+  color: $tabs-default-text;
+}
+
+.close {
+  text-align: right;
+}
+
+
+.tab-item {
+  opacity: 0.5;
+}
+
+
+.fd-nav-image {
+  position: relative;
+  max-width: 100%;
+  height: $bar-height - 1;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.toggle input:checked + .fdtrack {
+  border-color: $button-default-bg;
+  background-color: $button-default-bg;
+}
+
+.fd-label {
+  padding: 0px;
+}
+
+
+.fd-big-divider {
+    // height: 55px;
+    //
+    // span {
+    //   position: absolute;
+    //   bottom: 4px;
+    // }
+}
+
+.fd-select > div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

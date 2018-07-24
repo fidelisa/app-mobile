@@ -1,0 +1,4 @@
+<ion-view view-title={{title}}>
+  <div ng-show="showCategories" ng-include="'templates/forums/_categories.html'"></div>
+  <div ng-hide="showCategories" ng-include="'templates/forums/_list.html'" ng-controller="ForumsCtrl"></div>
+</ion-view>

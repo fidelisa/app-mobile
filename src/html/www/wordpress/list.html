@@ -1,0 +1,27 @@
+<ion-view view-title="{{title}}">
+  <ion-content id="facebook" scrollbar-y="false">
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-class="list" ng-repeat="msg in data" ng-click="showDetail($index)"  ng-if="data">
+
+      <div class="item item-avatar item-icon-right">
+        <img ng-src="{{msg.avatar}}" ng-show="msg.avatar">
+        <h2 ng-bind-html="msg.title.rendered" ></h2>
+        <p>{{dateAgo(msg.date)}}</p>
+        <i class="icon ion-share" ng-click="share(msg.link)" ng-show="canShare"></i>
+      </div>
+
+      <div class="item item-body">
+        <img class="wp-image" ng-src="{{msg.media}}" ng-show="msg.media">
+        <p ng-bind-html="msg.excerpt.rendered"></p>
+        <wp-comments noshow='true' url="msg.commentsUrl" parent="0"></wp-comments>
+
+      </div>
+
+
+    </div>
+
+    <div ng-show="msg" ng-include="'templates/wordpress/_item.html'"></div>
+  </ion-content>
+</ion-view>

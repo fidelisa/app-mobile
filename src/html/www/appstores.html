@@ -1,0 +1,28 @@
+<ion-modal-view ng-controller="AppstoreCtrl">
+  <ion-header-bar>
+    <div class="title title-center header-item" ng-bind-html="headtitle"></div>
+  </ion-header-bar>
+
+  <ion-content>
+
+    <div ng-class="list">
+  
+      <div class="item item-body text-center">
+        <h2 translate>Plus simple,<br>plus rapide, plus facile</h2>
+        <div ng-show="android">
+          <a ng-href="{{androidUrl}}"><img src="img/andstore.png" alt="" /></a>
+        </div>
+        <div ng-show="ios">
+          <a ng-href="{{iosUrl}}"><img src="img/appstore.png" alt="" /></a>
+        </div>
+        <p translate>Enrichissez votre expérience avec notre application gratuite</p>
+
+        <div class="text-center" ng-if="withClose">
+          <div class="text-button" ng-click="closeAppstoresModal()" translate>Plus tard</div>
+        </div>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

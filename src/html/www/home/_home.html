@@ -1,0 +1,27 @@
+<ion-content id="home" scrollbar-y="false">
+  <ion-refresher on-refresh="onRefresh()">
+  </ion-refresher>
+
+  <div ng-repeat="image in images">
+    <div ng-switch on="image.type">
+      <div ng-switch-when="carousel">
+
+        <ul rn-carousel class="image" rn-carousel-index="carouselIndex2" rn-carousel-auto-slide="" rn-carousel-duration="450" ng-style="imageStyle(image)">
+          <li ng-repeat="caImage in image.images">
+            <div ng-click="GotoLink('{{caImage.url}}')">
+              <img class="bgimage" fd-image-src="{{caImage.imageId}}" ng-style="imageStyle(caImage)">
+            </div>
+          </li>
+        </ul>
+
+        <div rn-carousel-indicators ng-if="image.images.length > 1" slides="image.images" rn-carousel-index="carouselIndex2" class="carousel-indicator"></div>
+      </div>
+
+      <div ng-switch-default ng-click="GotoLink('{{image.url}}')">
+        <img class="full-image" fd-image-src="{{image.imageId}}">
+      </div>
+
+    </div>
+  </div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Compte</h1>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="listStyle">
+      <div class="item text-center">
+        <h2 translate>Changer de mot de passe</h2>
+      </div>
+      <div class="item item-input">
+        <input type="password" ng-model="customer.old_password" placeholder="{{'Ancien mot de passe'|translate}}">
+      </div>
+      <div class="item item-input">
+        <input type="password" ng-model="customer.password"  placeholder="{{'Nouveau mot de passe'|translate}}">
+      </div>
+      <div class="item item-input">
+        <input type="password" ng-model="customer.confirmation_password" placeholder="{{'Confirmation'|translate}}">
+      </div>
+      <div class="item item-body fd-two-buttons">
+        <button class="button button-block" ng-click="changepass()" translate>
+          Valider
+        </button>
+
+        <button class="button button-block" ng-click="closeModal()" translate>
+          Annuler
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

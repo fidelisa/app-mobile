@@ -1,0 +1,33 @@
+<ion-modal-view class="fd_selector_modal">
+  <ion-header-bar class="header">
+    <h1 class="title">TODO</h1>
+  </ion-header-bar>
+  <ion-content class="fd-selector-modal-content">
+    <div>
+      <div class="fd-selector-search" ng-show="search" ng-class="{'focused' : searchHasFocus}">
+        <div class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" ng-focus="searchFocus($event)" ng-blur="searchBlur($event)"
+            ng-model="searchText"  placeholder="{{'Recherche'|translate}}">
+        </div>
+        <div class='fd-selector-search-ok' ng-show="searchHasFocus" translate>OK</div>
+      </div>
+      <div class="fd-selector-list" ng-class="{ 'has-selector-search': search }">
+        <div class="item item-icon-right" ng-click="pickID(el.uuid)" ng-style='el.style' ng-repeat="el in elements | filter:searchText " >
+          <i class="icon" ng-class="buttonStyle(el)"></i>
+          {{el.title}}
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="footer">
+    <div class="row padding_zero">
+      <button class="button button-clear button-block button_set"
+              ng-click="setFidelisaSelector()">{{mainObj.setLabel}}
+      </button>
+      <button class="button button-clear button-block button_close"
+              ng-click="closeFidelisaSelector()">{{mainObj.closeLabel}}
+      </button>
+    </div>
+  </ion-footer-bar>
+</ion-modal-view>

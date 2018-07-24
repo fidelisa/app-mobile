@@ -1,0 +1,56 @@
+/* slide-in-left-right */
+.slide-in-left-right {
+  @include translate3d(-100%, 0, 0);
+}
+
+.slide-in-left-right.ng-enter, .slide-in-left-right > .ng-enter {
+  @include transition(all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms);
+}
+
+.slide-in-left-right.ng-enter-active, .slide-in-left-right > .ng-enter-active {
+  @include translate3d(0, 0, 0);
+}
+
+.slide-in-left-right.ng-leave, .slide-in-left-right > .ng-leave {
+  @include transition(all ease-in-out 250ms);
+}
+
+
+/* slide-in-right-left */
+.slide-in-right-left {
+  @include translate3d(100%, 0, 0);
+}
+
+.slide-in-right-left.ng-enter, .slide-in-right-left > .ng-enter {
+  @include transition(all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms);
+}
+
+.slide-in-right-left.ng-enter-active, .slide-in-right-left > .ng-enter-active {
+  @include translate3d(0, 0, 0);
+}
+
+.slide-in-right-left.ng-leave, .slide-in-right-left > .ng-leave {
+  @include transition(all ease-in-out 250ms);
+}
+
+/* mh-slide */
+.mh-slide {
+  @include translate3d(0, 0, 0);
+  @include scale(0);
+  opacity: 0
+/*    transform: rotate(0deg) scale(0.761) skew(1deg) translate(0px);*/
+}
+
+.mh-slide.ng-enter, .mh-slide > .ng-enter {
+  @include transition(all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms);
+}
+
+.mh-slide.ng-enter-active, .mh-slide > .ng-enter-active {
+  @include translate3d(0, 0, 0) ;
+  @include scale(1);
+  opacity: 1;
+}
+
+.mh-slide.ng-leave, .mh-slide > .ng-leave {
+  @include transition(all ease-in-out 250ms);
+}

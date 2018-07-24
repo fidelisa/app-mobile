@@ -1,0 +1,19 @@
+
+.fd-icon-gift {
+  background-image: url('../img/gift.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100% !important;
+}
+
+.fd-icon:before{
+  content: "";
+}
+
+.tab-item {
+  //opacity: 1;
+}
+
+.tab-item.tab-item-active {
+  background-color: $tabs-active-bg;
+}

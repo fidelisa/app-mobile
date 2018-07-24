@@ -1,0 +1,46 @@
+
+  <div ng-class="list">
+    <div class="item text-center">
+      <h2>{{newTitle}}</h2>
+
+    </div>
+
+    <div class="item item-input item-select fd-select" ng-show='shops.length>1'>
+      <select ng-model="appointment.vendor_id">
+        <option ng-repeat="shop in shops" value='{{shop.uuid}}'>{{shop.title}}</option>
+      </select>
+    </div>
+
+    <div class="item item-input item-select fd-select" ng-show='plannings.length>1'>
+      <select ng-model="appointment.planning_id">
+        <option ng-repeat="planning in plannings" value='{{planning.uuid}}'>{{planning.title}}</option>
+      </select>
+    </div>
+
+    <div class="item">
+      <p ng-if="appointment.scheduled_at" ng-click="scheduleSelect($event)">{{secureDate(appointment.scheduled_at, 'EEEE dd MMM yyyy à HH:mm', appointment.timezone)}}</p>
+      <p ng-if="!appointment.scheduled_at" ng-click="scheduleSelect($event)" translate>Choisissez votre horaire</p>
+    </div>
+
+    <div ng-if="planningMode==='Booking'" class="item item-input item-select">
+      <div class="input-label" translate>Nombre de personnes</div>
+      <select ng-model="appointment.guest_number">
+        <option ng-repeat="d in numbers track by $index" value='{{$index + 1}}'>{{$index + 1}}</option>
+      </select>
+    </div>
+
+    <div class="item item-input">
+      <textarea placeholder="{{'Détails'|translate}}" ng-model="appointment.notes"></textarea>
+    </div>
+
+
+    <div class="item item-body fd-two-buttons">
+      <button class="button button-block" ng-click="doAppointment()" translate>
+        Valider
+      </button>
+      <button class="button button-block" ng-click="cancel()" ng-show="appointments.length>0" translate>
+        Annuler
+      </button>
+    </div>
+
+  </div>

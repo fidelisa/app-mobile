@@ -1,0 +1,32 @@
+<ion-view view-title="{{headtitle}}">
+
+    <ion-content>
+
+        <ion-refresher on-refresh="onRefresh()">
+        </ion-refresher>
+
+        <div class="list card">
+            <div class="item item-avatar">
+                <fd-avatar ng-value="contact" fd-width="40" fd-height="40" text-size=2 bg-color="{{avatarBgColor}}" color="{{avatarColor}}"></fd-avatar>
+                <div class="fd-name">{{contact.first_name}} {{contact.last_name}}</div>
+                <div class="fd-subtitle">{{contact.communication_channel}}</div>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-center force-border">
+                <a class="tab-item" href="tel:{{contact.phone}}">
+                    <i class="icon ion-ios-telephone"></i>
+                </a>
+                <a class="tab-item" href="mailto:{{contact.email}}">
+                    <i class="icon ion-ios-email"></i>
+                </a>
+                <div class="tab-item" ng-click="toggleClock($index)" ng-show="{{shop.withSchedule}}">
+                    <i class="icon ion-ios-clock-outline"></i>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </ion-content>
+
+</ion-view>

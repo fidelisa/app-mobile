@@ -1,0 +1,7 @@
+<div  ng-click="openPicker()">
+  <div ng-show="dateOK">
+    <div class="input-label input-black" ng-show="showMin">{{date | mintohours}}</div>
+    <div class="input-label input-black" ng-hide="showMin">{{date | date:"HH:mm"}}</div>
+  </div>
+  <div class="input-label" ng-hide="dateOK">{{customLabel}}</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="item item-body">
+    <fd-progress ng-if="card.complete" on-double-tap="onHold(card)" cardId="{{card.uuid}}" type="{{card.program.gauge_type}}"></fd-progress>
+
+    <table class="item-gift">
+        <tr ng-repeat="gift in card.levels | orderBy:'floor_points'" class="item-gift-block">
+            <td>
+                <fd-dot-text ng-click="showGift(gift)" value="{{gift.floor_points}}" bg-color="{{gift.color}}" text-size="1.2"></fd-dot-text>
+            </td>
+            <td class="gift-text" ng-click="showGift(gift)">{{gift.title}}</td>
+        </tr>
+    </table>
+</div>

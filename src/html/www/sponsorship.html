@@ -1,0 +1,67 @@
+
+<ion-view view-title={{getTitleString('godfather')}}>
+  <ion-content class='fd-cards'>
+
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div class="slider-pager" ng-class="{active: pagerActive()}" ng-if="pagerActive()">
+      <span class="slider-pager-page" ng-repeat="slide in cards track by $index" ng-class="{active: $index == currentSlide}" ng-click="pagerClick($index)">
+        <i class="icon ion-record"></i>
+      </span>
+    </div>
+
+    <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" ng-class="{'pager-active': pagerActive()}">
+
+      <ion-slide ng-repeat="card in cards">
+        <div class='box'>
+
+          <div class="godfather" ng-class="list" ng-show="card.program.sponsoring">
+            <div class="item text-center">
+              <h2>{{card.program.title}}</h2>
+            </div>
+
+            <div class="item item-body text-center">
+              <h2 translate>Parrainer mes amis</h2>
+              <div class="row">
+                <div class="col" ng-class="{'col-50': !isBrowser}">
+                  <button class="button button-block" ng-click="send('email', card)" translate>
+                    Par email
+                  </button>
+                </div>
+                <div class="col col-50" ng-hide="isBrowser">
+                  <button class="button button-block" ng-click="send('sms',card)" translate>
+                    Par sms
+                  </button>
+                </div>
+              </div>
+
+              <div class="forthem" translate>Pour mes amis :</div>
+              <img class="gift-image" fd-image-src="{{card.program.sponsored_gift_image_id}}" ng-show="card.program.sponsored_gift_image_id">
+              <div class="gift-text" ng-if='card.program.sponsored_gift'>{{card.program.sponsored_gift}}</div>
+              <div class="gift-text" ng-if='!card.program.sponsored_gift'>{{card.program.sponsored_points}} points</div>
+
+              <div class="foryou" translate>Pour moi :</div>
+              <img class="gift-image" fd-image-src="{{card.program.sponsor_gift_image_id}}" ng-show="card.program.sponsor_gift_image_id">
+              <div class="gift-text" ng-if='card.program.sponsor_gift'>{{card.program.sponsor_gift}}</div>
+              <div class="gift-text" ng-if='!card.program.sponsor_gift'>{{card.program.sponsor_points}} points</div>
+            </div>
+
+          </div>
+
+          <div class="godfather" ng-class="list" ng-show="!card.program.sponsoring">
+            <div class="item text-center">
+              <h2>{{card.program.title}}</h2>
+            </div>
+
+            <div class="item text-center">
+              <div translate>Aucun parrainage disponible</div>
+            </div>
+          </div>
+
+
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

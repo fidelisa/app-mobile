@@ -1,0 +1,23 @@
+{
+  "name": "fidelisa-selector",
+  "version": "1.0.0",
+  "description": "A selector for ionic framework by Fidelisa",
+  "main": "./dist/fidelisa-selector.bundle.min.js",
+  "scripts": {
+    "build": "gulp build && cp dist/fidelisa-selector.bundle.min.js ../../../www/lib"
+  },
+  "author": "https://github.com/fidelisa, tech@fidelisa.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "*",
+    "gulp-css2js": "*",
+    "gulp-minify-html": "*",
+    "gulp-ng-html2js": "*",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "*"
+  }
+}

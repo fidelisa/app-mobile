@@ -1,0 +1,28 @@
+<ion-view view-title={{getTitleString('forums')}}>
+
+  <ion-content>
+      <ion-refresher on-refresh="onRefresh()">
+      </ion-refresher>
+
+      <div ng-class="list" ng-repeat="category in categories">
+          <div class="item item-forums-category" ng-click="showDetail(category)">
+              <img class="fd-image" fd-image-src="{{category.image_id}}" ng-if="category.image_id">
+              <div class="fd-name" ng-if="!category.image_id">{{category.title}}</div>
+          </div>
+          <div class="item item-forums-category-tab" ng-if='category.forums.last'>
+              <div class="fd-date">
+                <div class="fd-count">
+                  <i class="ion-ios-chatboxes-outline"></i>
+                  <span>{{wrapMes(category.forums.count)}}</span>
+                </div>
+                <div class="fd-time">
+                  <i class="ion-clock"></i>
+                  <span>{{dateAgo(category.forums.last)}}</span>
+                </div>
+              </div>
+          </div>
+      </div>
+  </ion-content>
+    
+
+</ion-view>

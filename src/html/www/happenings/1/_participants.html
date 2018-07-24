@@ -1,0 +1,17 @@
+<ion-content>
+
+    <div ng-class="list" ng-show="customerEmpty">
+        <div class="item item-body text-center" translate>
+            Aucun participant pour l'instant
+        </div>
+    </div>
+
+    <div ng-class="list" ng-repeat="customer in happening.customers">
+      <a class="item item-avatar">
+        <img ng-if="customer.image_id"  fd-image-src="{{customer.image_id}}">
+        <img ng-if="!customer.image_id" src="img/avatarEmpty.png">
+        <h2 style="padding-top:10px;"><span>{{customer.first_name}}</span> <span>{{customer.last_name}}</span></h2>
+      </a>
+    </div>
+
+</ion-content>

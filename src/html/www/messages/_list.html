@@ -1,0 +1,60 @@
+<ion-content ng-show="logged">
+  <ion-refresher on-refresh="onRefresh()">
+  </ion-refresher>
+
+  <div class="item tabs tabs-secondary tabs-icon-center force-border fd-tabs-title" ng-if="activeTabs">
+    <a class="tab-item" ng-class="{active: activeMsg}" ng-click="toggleActiveMsg()">
+      <i class="icon ion-ios-email"></i>
+      <div>Messages</div>
+    </a>
+    <a class="tab-item" ng-class="{active: !activeMsg}" ng-click="toggleActiveMsg()">
+      <i class="icon ion-ribbon-b"></i>
+      <div>Gains</div>
+    </a>
+  </div>
+
+  <div ng-class="list" class="icon-top" ng-show="activeMsg">
+
+    <div ng-class="list" ng-show="messages.length == 0">
+        <div class="item item-body text-center" translate>
+            Aucun message pour l'instant
+        </div>
+    </div>
+
+    <div class="item item-icon-left item-icon-right" ng-repeat="msg in messages">
+      <div>
+        <i ng-click="read(msg)" class="icon ion-ios-email-outline"></i>
+        <div class="msg-title-unread" ng-class="{'msg-title-read': msg.read}" ng-click="read(msg)">{{dateAgo(msg.createdDate)}}</div>
+        <i class="icon ion-ios-trash-outline icon-button" ng-click="delete(msg)"></i>
+      </div>
+      <div class="msg-full">
+        <div ng-bind-html="msg.html"></div>
+        <div class="fd-translate" ng-click="toggleTranslate(msg)" ng-show="withLocalization">
+          <i class="icon ion-ios-world-outline"></i>
+          <span> </span><span translate>Traduire</span>
+          <div ng-show="msg.showTranslate" ng-bind-html="msg.htmlTr"></div>
+        </div>
+
+        <div class='text-center' ng-if="msg.image_id">
+          <a ng-click="GotoLink('{{msg.url}}')">
+            <img class="gift-image" fd-image-src="{{msg.image_id}}" ng-show="msg.image_id">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div ng-class="list" ng-repeat="gain in gifts" ng-show="!activeMsg">
+    <div class="item text-center" ng-controller="GiftsCtrl">
+      <div>
+        <img class="gift-image" fd-image-src="{{gain.image_id}}" ng-show="gain.image_id">
+        <div class="gift-text">{{gain.title}}</div>
+        <p ng-show="gain.expired_at" translate-params-date="gain.expired_at  | date:'shortDate'" translate>Valable jusqu'au {{date}}</p>
+        <div class="padding" ng-if="burnAlone"><div ng-click="onConsume(gain.uuid, true)" class="button">{{buttonBurnLabel}}</div></div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

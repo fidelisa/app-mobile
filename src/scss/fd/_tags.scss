@@ -1,0 +1,25 @@
+.fd-tag-wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -5px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.fd-tag-element {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.fd-tag {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 13px;
+}

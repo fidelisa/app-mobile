@@ -1,0 +1,24 @@
+<ion-view view-title="{{title}}">
+
+  <ion-nav-buttons side="left">
+    <div ng-class="{'ng-hide':!showSwipe}" >
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left" >
+      </button>
+      <span class="badge badge-assertive left-badge" ng-show="tabs.messages.count">&nbsp;</span>
+    </div>
+
+    
+    <button class="button buttons button-clear header-item" ng-class="{'ng-hide':!showback}" ng-click="goBack()">
+        <i class="icon ion-chevron-left"></i>
+        <span class="back-text">
+          <span class="default-title" translate>Retour</span>
+        </span>
+      </button>
+  </ion-nav-buttons>
+    
+    
+
+  <ion-content id="web" scroll="true" overflow-scroll="true" class="iframe-wrapper">
+    <iframe id="{{frameid}}" data-tap-disabled="true" ng-src="{{url}}" iframe-onload="iframeLoadedCallBack()"></iframe>
+  </ion-content>
+</ion-view>

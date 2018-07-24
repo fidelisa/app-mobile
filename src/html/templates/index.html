@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- Enable all requests, inline styles, and eval() -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' gap: data: ws: blob: 'unsafe-inline' 'unsafe-eval'">
+    <meta name="theme-color" content="<%= color %>">
+    <meta name="msapplication-navbutton-color" content="<%= color %>">
+    <meta name="apple-mobile-web-app-status-bar-style" content="<%= color %>">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="icon" ng-href="img/logo180.png?v={{logoName}}" />
+    <link rel="shortcut icon" ng-href="img/logo180.png?v={{logoName}}" />
+    <link rel="apple-touch-icon" ng-href="img/logo180.png?v={{logoName}}"/>
+    <link rel="apple-touch-icon-precomposed" ng-href="img/logo180.png?v={{logoName}}"/>        
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <title></title>
+
+    <script src="lib/jquery.min.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src='lib/angular.min.js'></script>
+    <script src='lib/angular-animate.min.js'></script>
+    <script src='lib/angular-sanitize.min.js'></script>
+    <script src='lib/angular-ui-router.min.js'></script>
+    <script src="lib/ionic.min.js"></script>
+    <script src='lib/ionic-angular.min.js'></script>
+
+    <script src="lib/http-auth-interceptor.js"></script>
+    <script src="lib/geolib.min.js"></script>
+    <script src="lib/angular-resource.min.js"></script>
+    <script src="lib/angular-touch.min.js"></script>
+    <script src="lib/angular-carousel.min.js"></script>
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/ng-cordova.min.js"></script>
+    <script src="lib/ngStorage.min.js"></script>
+    <script src="lib/toastr.min.js"></script>
+    <script src="lib/ionic-timepicker.bundle.min.js"></script>
+    <script src="lib/ionic-datepicker.bundle.min.js"></script>
+    <script src="lib/linkify.min.js"></script>
+    <script src="lib/linkify-string.min.js"></script>
+    <script src="lib/angular-gettext.min.js"></script>
+    <script src="lib/tmhDynamicLocale.min.js"></script>
+    <script src="lib/fidelisa-selector.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.bundle.js"></script>
+    <script src="js/angular-ios9-uiwebview.patch.js"></script>
+    <script src="js/languages.js"></script>
+
+    <!-- compiled css output -->
+    <link href="lib/angular-carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="lib/toastr.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+
+  </head>
+  <body>    
+    <ion-nav-view><fd-applink></fd-applink></ion-nav-view>
+    <%= contents %>
+    
+  
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+    <noscript>
+      You need script !      
+    </noscript>
+    
+  </body>
+</html>

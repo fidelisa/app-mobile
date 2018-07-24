@@ -1,0 +1,42 @@
+<ion-view view-title="{{headtitle}}">
+
+  <fd-float-button fd-click="new()"></fd-float-button>
+
+  <ion-header-bar class="bar bar-subheader bar-search">
+
+    <label class="item item-input input-search">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" ng-model="searchText" placeholder="{{'Rechercher un contact'|translate}}">
+    </label>
+
+  </ion-header-bar>
+
+  <ion-content class="has-subheader has-search">
+
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-if="closecontacts.length > 0">
+      <div class="item item-divider">
+        <p>A proximité</p>
+      </div>
+
+      <div class="item item-icon-left item-icon-right" ng-click="onContactClick(contact)" ng-repeat="contact in closecontacts">
+        <i class="icon ion-ios-person-outline"></i>
+        {{contact.first_name}} {{contact.last_name}}
+        <i class="icon fd-chevron ion-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="item item-divider">
+      <p>Tous les contacts</p>
+    </div>
+
+    <div class="item item-icon-left item-icon-right" ng-click="onContactClick(contact)" ng-repeat="contact in contacts">
+      <i class="icon ion-ios-person-outline"></i>
+      {{contact.first_name}} {{contact.last_name}}
+      <i class="icon ion-ios-arrow-right"></i>
+    </div>
+
+  </ion-content>
+</ion-view>

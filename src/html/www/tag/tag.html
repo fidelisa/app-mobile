@@ -1,0 +1,13 @@
+<div ng-click="selectTag()" ng-show="showTags" >
+  <div class="fd-tag-wrap">
+    <i ng-if="chevron" class="icon ion-chevron-right input-icon"></i>
+    <div class="fd-tag-element" ng-if="showElement">
+      <span ng-repeat='tag in wrapSelectedTags | limitTo: tagLimit' class="fd-tag" ng-style='tag.style'>{{tag.title}}</span>
+      <span ng-hide="disableClick" class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+    </div>
+    <div ng-if="showLabel">
+      <div class="fd-tag-label input-label">{{labelName()}}</div>
+      <span ng-hide="disableClick" class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+    </div>
+  </div>
+</div>

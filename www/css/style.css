@@ -1,0 +1,467 @@
+
+/* Empty. Add your own CSS if you like */
+
+.modal{
+  top: 0 ;
+  bottom: 0 ;
+  left: 0 ;
+  right: 0 ;
+  width: 100% ;
+}
+
+.card {
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+}
+
+
+@media (max-width: 320px) {
+  .button {
+    font-size: 85%;
+  }
+}
+
+.popup-title , .popup-body {
+  color: rgba(1,1,1,255);
+}
+
+.item-select select {
+  background: rgba(248,248,248,0);
+}
+
+.item h2 {
+  font-size: 21px;
+}
+
+
+#home {
+  line-height: 0px;
+}
+
+#home .title {
+  text-align: center;
+}
+
+.card-logo {
+  top: 8px;
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+
+.card .title {
+  font-size: 30px;
+}
+
+.fd-progress {
+  padding-top: 20px;
+  height: 80px;
+  width: 80%;
+  /*height: 50px;*/
+}
+
+/*text {
+  font-size: 20px;
+  font-family: Helvetica-bold;
+}
+*/
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+canvas, svg {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#home .row {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sg-base {
+  position: relative;
+  height: 100px;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.sg-try {
+  font-size: 95%;
+}
+
+.sg-bg {
+  position: absolute;
+  height: 90px;
+  width: 256px;
+  top: 0;
+  left: -8px;
+}
+
+.sg-box {
+  display: block;
+  width: 80px;
+  height: 90px;
+}
+
+.sg-img {
+  position: relative;
+  float:left;
+  background: url(../img/slot_1.png) 50% 0;
+  background-repeat : repeat-y;
+  width: 80px;
+  height: 90px;
+}
+
+.sg-pos1 {
+  background-position: 50% -90px;
+}
+
+.sg-pos2 {
+  background-position: 50% 0px;
+}
+
+.sg-border2 {
+  border-left: 1px solid #2B2B2B;
+  border-right: 1px solid #2B2B2B;
+}
+
+.sg-pos3 {
+  background-position: 50% 90px;
+}
+
+
+
+@media (min-width: 320px) {
+
+  .sg-base {
+    width: 270px;
+  }
+
+  .sg-try {
+    font-size: 100%;
+  }
+
+  .sg-bg {
+    width: 286px;
+  }
+
+  .sg-img {
+    width: 90px;
+  }
+}
+
+
+.sg-anim1 {
+  -webkit-animation:
+    slot2 1s linear 1,
+    slot1 1s ease-out 0.8s 1;
+  background-position: 50% 0px;
+}
+
+.sg-anim2 {
+  -webkit-animation:
+    slot2 1s linear 1,
+    slot1 1s ease-out 0.5s 1;
+  background-position: 50% 0px;
+}
+
+.sg-anim3 {
+  -webkit-animation:
+    slot2 1s linear 1,
+    slot1 1s ease-out 1s 1;
+  background-position: 50% 0px;
+}
+
+.sg-anim10 {
+  -webkit-animation:
+    slot2 1.5s linear 1,
+    slot1 2s ease-out 0.8s 1;
+  background-position: 50% 0px;
+}
+
+.sg-anim20 {
+  -webkit-animation:
+    slot2 1.5s linear 1,
+    slot3 2s ease-out 0.5s 1;
+  background-position: 50% 86px;
+}
+
+.sg-anim30 {
+  -webkit-animation:
+    slot2 1.5s linear 1,
+    slot4 2s ease-out 1s 1;
+  background-position: 50% -90px;
+}
+
+
+@-webkit-keyframes slot1 {
+    0%   { background-position: 50% 0px; }
+    100% { background-position: 50% 270px; }
+}
+
+@-webkit-keyframes slot2 {
+    0%   { background-position: 50% 0px; }
+    100% { background-position: 50% -990px; }
+}
+
+@-webkit-keyframes slot3 {
+    0%   { background-position: 50% 0px; }
+    100% { background-position: 50% -990px; }
+}
+
+@-webkit-keyframes slot4 {
+    0%   { background-position: 50% 0px; }
+    100% { background-position: 50% -1180px; }
+}
+
+.iframe-wrapper iframe {
+   width: 100%;
+   height: 100%;
+}
+
+.item-gift {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-gift tr {
+  /*width: 100%;*/
+}
+
+.item-gift td {
+  height: 50px;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.old_item-gift {
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 240px;*/
+}
+
+.old_item-gift-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  width: 240px;
+  margin-bottom: 7px;
+}
+
+.old_item-gift-block > div {
+  -webkit-flex: 1;
+  flex: 1;
+  align-self: center;
+  -webkit-align-self: center;
+
+  margin-left: 10px;
+}
+
+.old_item-gift-block > svg {
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+
+.gift-image {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.gift-text {
+  font-weight: 500;
+}
+
+.forthem {
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.foryou {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+/*.godfather .item:first-child {
+  padding-bottom: 0px;
+}
+*/
+.godfather .item:first-child .button {
+  margin-bottom: 0px;
+}
+
+.fb-cnx, .fb-cnx:hover {
+  background-color: #3a5795;
+  color: white;
+}
+
+.fd-like {
+  margin: 0;
+  padding: 0 12px;
+  min-width: 52px;
+  min-height: 47px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.fb-cnx > i {
+  margin-right: 7px;
+}
+
+.button {
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+
+.fd-fb-header {
+  background-position:50% 50%;
+  background-size: cover;
+}
+
+.confirm-btn {
+  font-size: 99%;
+}
+
+.fd-cond {
+  margin-top: 20px;
+}
+
+.device-preview {
+  margin: auto;
+  margin-top: 5px;
+  width: 409px;
+  height: 836px;
+  background: url(../img/scratchpad-phone.png) no-repeat right top;
+}
+
+.device-preview .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.device-preview .content iframe {
+  position: absolute;
+  top: 104px;
+  left: 29px;
+  z-index: 0;
+  width: 320px;
+  height: 568px;
+  top: 82px;
+  left: 44px;
+  border: 0;
+  background-color: white;
+  transition: opacity .2s ease-in-out;
+}
+
+
+.appstore {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 225px;
+  height: 90px;
+  display: block;
+  background: url(../img/appstore.png) no-repeat;
+}
+
+.andstore {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 225px;
+  height: 90px;
+  background: url(../img/andstore.png) no-repeat;
+}
+
+.left-badge {
+  position: relative;
+  top: 0px;
+  right: 10px;
+  width: 5px;
+  height: 16px;
+}
+
+ul[rn-carousel] {
+  margin: 0 auto;
+}
+
+.bgimage {
+  width: 100%;
+  height: 768px;
+}
+
+.carousel-indicator {
+  position: relative;
+  top: -20px;
+  text-align: center;
+}
+
+
+.toast-info {
+  background-color: #222;
+}
+
+.forgetpass {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+textarea {
+  height: 100px;
+  background-color: transparent;
+}
+
+.button-hide {
+  display: none !important;
+}
+
+.button-color1 {
+  background-color: rgb(148, 55, 52);
+}
+
+.button-color2 {
+  background-color: rgb(217, 149, 148);
+}
+
+.button-color3 {
+  background-color: rgb(195, 214, 155);
+}
+
+.button-color4 {
+  background-color: rgb(118, 146, 60);
+}
+
+.notread {
+  font-weight: bold;
+}
+

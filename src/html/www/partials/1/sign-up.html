@@ -1,0 +1,42 @@
+<ion-content ng-controller="SignUpCtrl" ng-hide="logged" scroll="false">
+
+  <div ng-class="list">
+    <div class="item text-center" ng-click="devMod()">
+      <img class="fd-logo" src='img/logo.png'>
+    </div>
+
+    <label class="item item-input">
+      <input type="text" ng-model="user.login" placeholder="{{'Indiquez votre e-mail'|translate}}" on-return='nextPass()'>
+    </label>
+    <label class="item item-input" ng-show="showPassword">
+      <input id="pass" type="password" ng-model="user.password" placeholder="{{'Mot de passe'|translate}}" return-close='true'>
+    </label>
+    <div class="item item-body">
+      <div class="padding">
+        <button class="button button-block" ng-click="signUp()" translate>
+          Connexion
+        </button>
+
+        <button ng-if="showFacebook()" class="button button-block fd-facebook" ng-click="signWithFaceBook()">
+          <div class='fd-facebook-icon'><span class="icon ion-social-facebook"></span></div>
+          {{'Connexion via Facebook'|translate}}
+        </button>
+
+        <button class="button button-block s1_purple_button" ng-click="openModal()" translate>
+          Inscription
+        </button>
+        <div class="text-button" ng-click="openForgottenPassword()" translate>Mot de passe oublié</div>
+        <div class="text-button" ng-if="withLocalization" ng-click="changeLang()" translate>Changer de langue</div>
+
+        <button class="button button-block" ng-if="devMode" ng-click="openDevModeModal()" translate>
+          DevMode
+        </button>
+
+        <p style="margin-top:50px;text-align:center"><img src="img/somfy.png"></p>
+
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

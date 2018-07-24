@@ -1,0 +1,21 @@
+
+<ion-view view-title={{getTitleString('instagram')}}>
+  <ion-content id="instagram">
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-show="instagram.profile" class="fd-fb-header" fd-bg-style="instagram.profile.cover.source">
+      <div class="item item-avatar item-icon-right">
+        <img ng-src="{{instagram.profile.profile_picture}}" ng-show="instagram.profile.profile_picture">
+        <h2>{{instagram.profile.username}}</h2>
+        <p>{{instagram.profile.bio}}</p>
+        <div class="fd-instagram-count" translate>{{instagram.profile.counts.media}} publications - {{instagram.profile.counts.followed_by}} abonnés - {{instagram.profile.counts.follows}} suivis</div>
+      </div>
+    </div>
+
+    <div class="list fd-instagram fd-instagram-list">
+      <img ng-repeat="msg in instagram.media" ng-src="{{msg.images.thumbnail.url}}" ng-click="showDetail($index)">
+    </div>
+
+  </ion-content>
+</ion-view>

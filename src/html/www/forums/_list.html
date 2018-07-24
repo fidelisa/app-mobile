@@ -1,0 +1,39 @@
+<ion-view view-title="{{activeForum}}">
+    <ion-content>
+      <ion-refresher on-refresh="onRefresh()">
+      </ion-refresher>
+      <div ng-class="list" ng-repeat="post in listForums">
+
+          <div class="item item-forums item-avatar-left item-icon-right" ng-click="showDetail(post)">
+
+            <fd-avatar fd-image="post.customer.image_id"></fd-avatar>
+            <div class="fd-block">
+              <div class="fd-name-block">
+                <div class="fd-name">{{post.customer.first_name}} {{post.customer.last_name}}</div>
+                <span class="icon icon-favorite" ng-class="{'ion-ios-star': post.follow,'ion-ios-star-outline': !post.follow}"
+                  ng-click="followToggle(post); $event.stopPropagation();"></span>
+                <span ng-if="canDeletePost(post)" class="icon ion-ios-trash-outline fd-trash"
+                  ng-click="deletePost(post); $event.stopPropagation();"></span>
+              </div>
+              <div class="fd-msg" ng-bind-html="post.title"></div>
+              <div class="fd-name-block">
+                <div class="fd-date">
+                  <span ng-if="post.replies_count">
+                    <i class="ion-ios-chatboxes-outline"></i>
+                    <span>{{wrapRep(post.replies_count)}}</span>
+                  </span>
+                  <span>
+                    <i class="ion-ios-clock-outline"></i>
+                    <span>{{dateAgo(post.last_answer_at)}}</span>
+                  </span>
+                </div>
+              </div>
+              <i class="icon fd-chevron ion-chevron-right"></i>
+            </div>
+
+          </div>
+
+      </div>
+
+  </ion-content>
+</ion-view>

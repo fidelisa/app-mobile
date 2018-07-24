@@ -1,0 +1,76 @@
+<ion-header-bar ng-show="logged" class="bar bar-subheader" ng-if="allowSearch">
+  <div class="fd-bar-content" ng-if="myown">
+    <div class="fd-bar">
+       <a class="button" ng-click="selectCreate()">
+         <span ng-show="showOwns" class="icon fd-small-icon ion-ios-checkmark-empty"></span>
+         <span translate>J'ai créé</span>
+       </a>
+       <a class="button" ng-click="selectParticipants()">
+         <span ng-hide="showOwns" class="icon fd-small-icon ion-ios-checkmark-empty"></span>
+         <span translate>Je participe</span>
+       </a>
+     </div>
+   </div>
+  <div class="fd-bar-content" ng-if="!myown">
+      <div class="fd-bar">
+          <a class="button" ng-click="selectDate()">
+            {{'Date' | translate}}
+            <span class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+          </a>
+          <a class="button" ng-click="selectTag()" ng-if="allowTags">
+            {{tagName}}
+            <span class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+          </a>
+          <a class="button" ng-click="selectShop()" ng-if="allowShops">
+            {{'Lieux' | translate}}
+            <span class="icon fd-small-icon ion-android-arrow-dropdown"></span>
+          </a>
+      </div>
+  </div>
+</ion-header-bar>
+
+<fd-float-button fd-click="addHappening()" ng-if="allowAddHappening"></fd-float-button>
+
+<ion-content ng-class="{'has-subheader fd-bar-subheader': allowSearch}" ng-show="logged">
+    <ion-refresher on-refresh="onRefresh()">
+    </ion-refresher>
+
+    <div ng-class="list" ng-show="happeningEmpty">
+        <div class="item item-body text-center" translate>
+            Aucun déjeuner pour l'instant
+        </div>
+    </div>
+
+    <div ng-class="list" ng-repeat="happening in listHappenings" ng-click="onHappeningClick(happening)">
+        <div class="item-happenings">
+            <img class="fd-image" fd-image-src="{{happening.image_id}}" ng-if="happening.image_id">
+        </div>
+        <div class="item item-happenings item-icon-right">
+            <i class="icon fd-chevron ion-chevron-right"></i>
+            <div class="fd-item">
+                <div class="fd-date">
+                    {{secureDate(happening.started_at, 'EEEE dd MMMM yyyy - ', happening.timezone)}} {{secureDate(happening.started_at, 'shortTime', happening.timezone)}}
+                </div>
+                <div class="fd-duration">
+                    <span ng-show="happening.duration"  translate>Durée : {{happening.duration | mintohours}}</span>
+                    <span ng-show="happening.vendor_id" translate-context="Durée"> {{'à' | translate}}
+                      <span class="s1_shop"> {{happening.vendor_title}} </span>
+                      <span class="s1_place" ng-show="happening.place_location"> - {{happening.place_location}}</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="fd-title">
+                {{happening.title}}
+            </div>
+
+            <fd-tag ng-model="happening.tag_ids" disable-click fd-tags-options="happenings"></fd-tag>
+
+            <div ng-if="happening.confirmed" class="fd-i-participate" translate>
+              Je participe
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

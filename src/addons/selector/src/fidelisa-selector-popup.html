@@ -1,0 +1,16 @@
+<div>
+  <div class="fd-selector-search" ng-show="search" ng-class="{'focused' : searchHasFocus}">
+    <div class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" ng-focus="searchFocus($event)" ng-blur="searchBlur($event)"
+        ng-model="searchText"  placeholder="{{'Recherche'|translate}}">
+    </div>
+    <div class='fd-selector-search-ok' ng-show="searchHasFocus" translate>OK</div>
+  </div>
+  <div class="fd-selector-list" ng-class="{ 'has-selector-search': search }">
+    <div class="item item-icon-right" ng-click="pickID(el.uuid)" ng-style='el.style' ng-repeat="el in elements | filter:searchText " >
+      <i class="icon" ng-class="buttonStyle(el)"></i>
+      {{el.title}}
+    </div>
+  </div>
+</div>

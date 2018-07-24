@@ -1,0 +1,28 @@
+<ion-modal-view ng-controller="PointsCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Enregistrer des points</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div ng-class="list">
+
+      <div class='item'>
+        <h1 class='text-center'>{{pointsSensString}} {{pointsTotal}}</h1>
+
+        <div class="row" ng-repeat="calcRow in calc">
+          <div class="col col-33" ng-repeat="col in calcRow">
+            <fd-dot-text value="{{col}}" bg-color="{{buttonColors.bgColor}}"
+            color="{{buttonColors.color}}" fd-width="68" fd-height="65" ng-click="addPoints(col)"
+            text-size="1.4"></fd-dot-text>
+          </div>
+        </div>
+
+        <div class="fd-two-buttons">
+          <button class="button button-block" ng-click="sendPoints()">Valider</button>
+          <button class="button button-block" ng-click="closePointsModal()">Annuler</button>
+        </div>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,61 @@
+<div class="list">
+
+  <div class="item item-input">
+    <input type="text" ng-model="happening.title" placeholder="{{'Titre'|translate}}">
+  </div>
+
+  <div class="item item-input item-select fd-select" ng-show='categories.length>1'>
+    <select ng-model="happening.happenings_category_id">
+      <option ng-repeat="category in categories" value='{{category.uuid}}'>{{category.title}}</option>
+    </select>
+  </div>
+
+  <div class="item item-input">
+      <textarea class='happening-description-textarea'
+                placeholder="{{'Description'|translate}}"
+                ng-model="happening.description">
+      </textarea>
+  </div>
+
+  <fd-selectors-list ng-model="happening.vendor_id" label="{{shopLabel}}" list="shops" mono autoclose></fd-selectors-list>
+
+  <div class="item item-input">
+    <input type="text" ng-model="happening.place_location" placeholder="{{'Lieu de l\'événement'|translate}}">
+  </div>
+
+  <fd-tag class="item item-icon-right" style="padding-top:5px;padding-bottom:5px;" ng-model="happening.tag_ids" fd-tags-options="happenings"></fd-tag>
+
+  <fd-date-picker class="item item-input" label="{{'Date'|translate}}" ng-model="happening.started_at">
+  </fd-date-picker>
+
+  <fd-time-picker class="item item-input" label="{{'Heure'|translate}}" ng-model="happening.started_at">
+  </fd-time-picker>
+
+  <fd-time-picker class="item item-input" duration label="{{'Durée'|translate}}" ng-model="happening.duration">
+  </fd-time-picker>
+
+  <fd-selectors-list ng-model="happening.quota" label="{{quotaLabel}}" list="quotaList" mono autoclose></fd-selectors-list>
+
+
+  <div class="item item-toggle">
+     <span class="input-label fd-label" translate>Ētre notifié de nouvelles inscriptions</span>
+     <label class="toggle">
+       <input type="checkbox" ng-model="happening.notify_creator">
+       <div class="track fdtrack">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </div>
+
+  <div class="item item-body fd-two-buttons">
+    <button class="button button-block" ng-click="doHappening()" ng-disabled="happeningInvalid()" translate>
+      Valider
+    </button>
+
+    <button class="button button-block" ng-click="closeNewModal()" translate>
+      Annuler
+    </button>
+
+  </div>
+
+</div>

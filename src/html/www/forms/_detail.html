@@ -1,0 +1,32 @@
+<div ng-class="list" ng-hide="isModal || detail">
+  <div class="item item-body text-center">
+    <div>{{message}}</div>
+  </div>
+  <button class="button button-block" ng-click="close()" translate>
+    Fermer
+  </button>
+</div>
+
+
+<div class="list" ng-show='detail' >
+  <div class="item item-body ">
+    <div ng-show="data.description" >
+      <p ng-bind-html="data.description.textEncode()" ></p>
+    </div>
+  </div>
+
+  <div class="item item-input" ng-repeat="field in data.fields">
+    <span class="input-label">{{field.label}}</span>
+    <input type="text" ng-model="customersForm.answer[field.code]" placeholder="{{field.placeholder}}" ng-change='validChange()'>
+  </div>
+
+  <div class="item item-body fd-two-buttons">
+    <button class="button button-block" ng-click="send()" ng-show="showValid" translate>
+      Valider mes réponses
+    </button>
+    <button class="button button-block" ng-click="close()" ng-hide="showValid" translate>
+      Enregistrer
+    </button>
+  </div>
+
+</div>

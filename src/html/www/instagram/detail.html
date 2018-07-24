@@ -1,0 +1,28 @@
+
+<ion-view view-title={{getTitleString('instagram')}}>
+  <ion-content id="instagram">
+
+    <div ng-show="instagram.profile" class="fd-fb-header">
+      <div class="item item-avatar item-icon-right">
+        <img ng-src="{{instagram.profile.profile_picture}}" ng-show="instagram.profile.profile_picture">
+        <h2>{{instagram.profile.username}}</h2>
+        <p style="white-space: normal;">{{detail.caption.text}}</p>
+      </div>
+    </div>
+
+    <div class="fd-instagram fd-instagram-detail">
+      <video width="320" height="240" controls ng-if="detail.type==='video'">
+        <source ng-src="{{detail.videos.low_bandwidth.url}}" type="video/mp4">
+        <img ng-src="{{detail.images.low_resolution.url}}">
+      </video>
+      <img ng-src="{{detail.images.low_resolution.url}}" ng-if="detail.type!=='video'">
+
+    </div>
+
+    <div class="item fd-instagram fd-instagram-comments">
+      <p><i class="icon ion-ios-heart " translate></i>&nbsp;{{detail.likes.count}} aiment</p>
+      <p><i class="icon ion-ios-chatbubble " translate></i>&nbsp;{{detail.comments.count}} commentaires</p>
+    </div>
+
+  </ion-content>
+</ion-view>

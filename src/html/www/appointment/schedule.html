@@ -1,0 +1,31 @@
+<ion-modal-view ng-controller="AppointmentScheduleCtrl">
+  <ion-header-bar>
+    <div class="buttons">
+      <button class="button back-button buttons button-clear header-item" ng-click="closeSchedule()">
+        <i class="icon ion-chevron-left" ng-click="previousDate()"></i>
+      </button>
+    </div>
+    <h1 class="title" translate>Horaires</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="list">
+      <div class="item text-center item-icon-left item-icon-right">
+        <i class="icon ion-chevron-left" ng-click="previousDate()"></i>
+        <div ng-click="openPicker()">{{datepicker | date:'EEEE dd MMM yyyy'}}</div>
+        <i class="icon ion-chevron-right" ng-click="nextDate()"></i>
+      </div>
+
+
+      <div class="item" ng-if="availables.length==0" >
+        <p translate>Aucun rendez-vous disponible</p>
+      </div>
+
+      <div class="item" ng-repeat="available in availables" >
+        <p ng-click='select(available)'>{{secureDate(available.date, "fullDate", appointment.time_zone)}}
+          - {{secureDate(available.date, "shortTime", appointment.time_zone)}}</p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,15 @@
+<div ng-class="list" class="wp-detail">
+    <div class="item item-avatar item-icon-right">
+    <img ng-src="{{msg.avatar}}" ng-show="msg.avatar">
+    <h2 ng-bind-html="msg.title.rendered" ></h2>
+    <p>{{dateAgo(msg.date)}}</p>
+    <i class="icon ion-share" ng-click="share(msg.link)" ng-show="canShare"></i>
+    </div>
+
+    <div class="item item-body">
+    <img class="wp-image" ng-src="{{msg.media}}" ng-show="msg.media">
+    <p ng-bind-html="msg.content.rendered"></p>
+
+    <wp-comments url="msg.commentsUrl" parent="0"></wp-comments>
+    </div>
+</div>

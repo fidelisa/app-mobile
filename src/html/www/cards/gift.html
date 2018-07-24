@@ -1,0 +1,21 @@
+<ion-modal-view ng-controller="GiftCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Pour {{currentGift.floor_points}} points</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div ng-class="list">
+      <div class="item text-center">
+        <h2>{{currentGift.title}}</h2>
+      </div>
+      <div class="item item-body text-center">
+        <img class="gift-image" fd-image-src="{{currentGift.image_id}}">
+        <p ng-bind-html="currentGift.description.textEncode()" style="text-align: left" ></p>
+
+        <div class="padding" style="margin-top:20px">
+          <button class="button button-block" ng-click="closeModal()">OK</button>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

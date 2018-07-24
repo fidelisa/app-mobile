@@ -1,0 +1,237 @@
+
+//--- HAPPENINGS CATEGORIES
+
+.item-happenings-category {
+
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+  padding: 0;
+  min-height: 80px;
+
+  .fd-favor {
+    border-radius: 50%;
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    color: rgba(255,255,255, 0.7);
+    // background-color: rgba(255,255,255, 0.5);
+    text-align: center;
+  }
+
+  .fd-title {
+    font-size: 24px;
+    font-weight: 400;
+    top: 50px;
+    text-align: center;
+  }
+
+  .fd-image {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: visible;
+  }
+}
+
+//--- HAPPENINGS LIST
+
+.item-happenings {
+
+  .fd-small-icon {
+    font-size: 16px;
+  }
+
+  .fd-image {
+    padding: 0;
+    min-height: 60px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    margin-bottom: -5px;
+  }
+
+  .fd-item {
+    position: relative;
+    width: 100%;
+  }
+
+  .fd-i-participate {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .fd-duration {
+    font-size: 100%;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-shop {
+    font-size: 100%;
+    font-weight: 500;
+    opacity: 0.9;
+    text-overflow: ellipsis;
+  }
+
+  .fd-title {
+    font-size: 115%;
+    font-weight: normal;
+    font-style: italic;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-date {
+    text-transform: capitalize;
+    //letter-spacing: 1px;
+    font-size: 105%;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-location {
+    font-size: 100%;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-status {
+    text-align: right;
+    font-size: 75%;
+    font-style: italic;
+    text-overflow: ellipsis;
+  }
+
+}
+
+//--- HAPPENING DETAIL ---
+
+.item-happening {
+
+  .fd-image {
+    margin-bottom: -5px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: visible;
+  }
+
+  .fd-desc {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .fd-desc-full {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+
+  .fd-i-participate {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    text-overflow: ellipsis;
+  }
+
+  .fd-duration {
+    font-size: 100%;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-shop {
+    font-size: 100%;
+    font-weight: 500;
+    opacity: 0.9;
+    text-overflow: ellipsis;
+  }
+
+  .fd-location {
+    font-size: 100%;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-customer-name {
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+  }
+
+  .fd-title {
+    font-size: 115%;
+    font-weight: normal;
+    font-style: italic;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-date {
+    text-transform: capitalize;
+    //letter-spacing: 1px;
+    font-size: 110%;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fd-status {
+    text-align: right;
+    font-size: 75%;
+    font-style: italic;
+    text-overflow: ellipsis;
+  }
+
+}
+
+// OTHER STYLES
+
+.happening-description-textarea {
+  height: 100px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "fidelisa-selector",
+  "version": "1.2.1",
+  "authors": [
+    "fidelisa <tech@fidelisa.com>"
+  ],
+  "description": "A selector for ionic framework by Fidelisa",
+  "main": [
+    "./dist/fidelisa-selector.bundle.min.js"
+  ],
+  "keywords": [
+    "fidelisa-selector",
+    "ionic"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fidelisa",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic": ">=0.9.27"
+  }
+}

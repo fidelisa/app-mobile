@@ -1,0 +1,26 @@
+.fd-instagram {
+  @include display-flex();
+  @include align-items(center);
+  @include flex-flow(row);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  background-color: $item-default-bg;
+}
+
+.fd-instagram-list img {
+  width: 33%;
+  padding: 3px;
+}
+
+.fd-instagram-detail img {
+  margin: 20px;
+}
+
+.fd-instagram-comments {
+  @include justify-content(space-between);
+}
+
+.fd-instagram-count {
+  font-size: 80%;
+  white-space: normal;
+}

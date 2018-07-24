@@ -1,0 +1,48 @@
+<ion-header-bar class="bar bar-subheader bar-search">
+
+    <label class="item item-input input-search">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" ng-model="q"  placeholder="{{'Recherche'|translate}}">
+    </label>
+
+</ion-header-bar>
+
+<ion-content class="has-subheader has-search">
+
+  <ion-refresher on-refresh="onRefresh()">
+  </ion-refresher>
+
+<div ng-class="list" ng-repeat="shop in shops | filter:{searchText: q} | orderBy:['-favorite','distance','title']:false ">
+
+  <div class="item item-thumbnail-left item-text-wrap fd-card">
+    <img fd-image-src="{{shop.image_id}}" fd-image-size=87 style="max-width: 87px; max-height: 87px;"  ng-show="{{showImage(shop.image_id)}}">
+    <h2>{{shop.title}}</h2>
+    <p>{{shop.address1}}</p>
+    <p>{{shop.address2}}</p>
+    <p>{{shop.zipcode}} {{shop.city}}</p>
+    <p ng-show="shop.distance">{{metrics(shop.distance) | number}} {{metricsUnit(shop.distance)}}</p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-center no-border">
+    <a class="tab-item" href="tel:{{shop.phone}}">
+      <i class="icon ion-ios-telephone"></i>
+    </a>
+    <a class="tab-item" href="mailto:{{shop.email}}">
+      <i class="icon ion-ios-email"></i>
+    </a>
+    <a class="tab-item" ng-click="go(shop)">
+      <i class="icon ion-ios-location"></i>
+    </a>
+    <div class="tab-item" ng-click="toggleClock($index)" ng-show="{{shop.withSchedule}}">
+      <i class="icon ion-ios-clock"></i>
+    </div>
+    <a class="tab-item" ng-click="favoriteToggle(shop)">
+      <i class="icon" ng-class="{'ion-ios-star': shop.favorite,'ion-ios-star-outline': !shop.favorite}"></i>
+    </a>
+  </div>
+
+  <div ng-show="showtimes[$index]" class="item item-text-wrap" ng-click="toggleClock($index)">
+      <p ng-bind-html="shop.scheduleHtml"></p>
+  </div>
+</div>
+</ion-content>

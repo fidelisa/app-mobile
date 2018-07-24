@@ -1,0 +1,27 @@
+<ion-view view-title="{{postTitle}}">
+    <ion-content ng-show="logged">
+      <div ng-class="list">
+        <div ng-if="withTitle" class="item item-input">
+          <input type="text" ng-model="forum.title" placeholder="{{'Titre'|translate}}">
+        </div>
+
+        <fd-camera ng-model="forum.imageUri"></fd-camera>
+
+        <div class="item item-input">
+          <textarea class='item-forums-textarea' placeholder="{{'Votre message'|translate}}" ng-model="forum.message"></textarea>
+        </div>
+
+
+        <div class="item item-body">
+          <div class="padding">
+            <button class="button button-block" ng-click="doSend()" translate>
+              Ajouter votre message
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+<ion-view view-title={{getTitleString('appointment')}}>
+
+  <fd-float-button fd-click="new()" ng-show="appointments.length>0"></fd-float-button>
+
+  <div ng-show="appointments.length>0">
+    <ion-content>
+      <ion-refresher on-refresh="onRefresh()">
+      </ion-refresher>
+
+      <div ng-class="list" ng-repeat="appointment in appointments" >
+
+        <div class="item item-icon-left item-icon-right">
+          <i ng-if="!appointment.validated_at" class="icon ion-ios-circle-outline"></i>
+          <i ng-if="appointment.validated_at" class="icon ion-ios-checkmark-outline"></i>
+          <div class="appointment-date">
+            {{secureDate(appointment.scheduled_at, "fullDate", appointment.time_zone)}} - {{secureDate(appointment.scheduled_at, "shortTime", appointment.time_zone)}}
+          </div>
+          <p ng-if="appointment.validated_at" style="font-style:italic;" translate>Confirmé le {{secureDate(appointment.validated_at, "shortDate", appointment.timezone)}}</p>
+          <p ng-if="!appointment.validated_at" style="font-style:italic;" translate>En attente</p>
+          <p style="font-weight:500;">{{appointment.planning_title}}</p>
+          <i ng-click="cancelAppointment(appointment.uuid)" class="icon ion-ios-trash-outline icon-button"></i>
+        </div>
+
+        <div class="item item-body" ng-if="appointment.notes">
+          <div ng-bind-html="appointment.notes.textEncode()"></div>
+        </div>
+
+        <div class="item text-center" ng-if="!appointment.calendar">
+          <a ng-click="addToCalendar(appointment)" translate>Ajouter à mon calendrier</a>
+        </div>
+
+      </div>
+    </ion-content>
+  </div>
+
+  <div ng-hide="appointments.length>0">
+    <ion-content ng-controller="AppointmentNewCtrl" >
+      <div ng-include="'templates/appointment/_new.html'"></div>
+    </ion-content>
+  </div>
+
+</ion-view>

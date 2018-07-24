@@ -1,0 +1,15 @@
+<div>
+
+  <div class="fd-search" ng-show="false">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" ng-model="searchText"  placeholder="{{'Recherche'|translate}}">
+    </label>
+  </div>
+  <div class="fd-list">
+    <div class="item item-icon-right" ng-click="pickShop(shop.uuid)" ng-repeat="shop in shops | filter:searchText " >
+      <i class="icon" ng-class="buttonStyle(shop)"></i>
+      {{shop.title}}
+    </div>
+  </div>
+</div>

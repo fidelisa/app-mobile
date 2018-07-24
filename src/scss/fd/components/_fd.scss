@@ -1,0 +1,60 @@
+.fd-float-button {
+  position: fixed;
+  right: 45px;
+  bottom: $tabs-height + 45px;
+  height: 66px;
+  width: 66px;
+  color: $button-add-color;
+  border-color: none;
+  z-index: $z-index-click-block ;
+  // background-color: $button-add-bg;
+  // border-radius: 50%;
+
+  i {
+      font-size: 75px;
+      position: absolute;
+      top: -5px;
+      left: -5px;      
+  }
+}
+
+.ionic_timepicker_popup {
+
+  .row {
+    background-color: $item-default-bg;
+    color: $item-default-text;
+    //border-color: $item-default-border;
+  }
+
+  .heading {
+    background-color: $bar-default-bg;
+    color: $bar-default-text;
+    //border-color: $bar-default-border;
+  }
+
+  .time_picker_arrows {
+    color: $item-default-text;
+  }
+
+  .time_picker_box_text {
+    color: $item-default-text;
+  }
+
+  .time_picker_colon {
+    color: $item-default-text;
+  }
+
+  .button_set {
+    background-color: $button-default-bg;
+    color: $button-default-text;
+    //border-color: $bar-default-border;
+  }
+
+  .button_close {
+    background-color: $button-default-bg;
+    color: $button-default-text;
+    //border-color: $bar-default-border;
+  }
+
+
+}

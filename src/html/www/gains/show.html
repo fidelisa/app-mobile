@@ -1,0 +1,21 @@
+<ion-modal-view ng-controller="showGainCtrl">
+  <ion-header-bar>
+    <h1 class="title" translate>Gain</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <div ng-class="list">
+      <div class="item text-center">
+        <div>
+          <img class="gift-image" fd-image-src="{{gain.image_id}}" ng-show="gain.image_id">
+          <div class="gift-text">{{gain.title}}</div>
+          <div translate>Utilisé à {{consumedAt | date:'short' }}</div>
+          <div class="padding" style="margin-top:20px">
+            <button class='button button-block' ng-click="closeModalBurn()" translate>Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title={{title}}>
+  <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear" ng-if="UserList" ng-click="showCart()">
+        <i class="icon ion-person"></i>
+      </button>
+  </ion-nav-buttons>
+
+  <div ng-show="showCategories" ng-include="'templates/items/_categories.html'"></div>
+  <div ng-hide="showCategories" ng-include="'templates/items/_list.html'" ng-controller="ItemsCtrl"></div>
+
+</ion-view>

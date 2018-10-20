@@ -49,6 +49,7 @@ angular
         newMsg.createdDate = newMsg.created_at;
         var data = newMsg['data_html'] || newMsg['data'];
         newMsg.html = data.textEncode();
+        newMsg.html = newMsg.html.replace(/\<a href=/gi, '<a target="_system" href=');
         return newMsg;
       }); 
     }

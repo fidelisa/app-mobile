@@ -22,3 +22,12 @@ window.normalizeUUID = function(uuid) {
   }
   return uuid.replace(/-/g, '').toUpperCase();
 }
+
+
+window.addEventListener('load', function () {
+  $(document).on('click', 'a[target="_system"]', function (e) {
+    e.preventDefault();
+    var url = this.href;
+    window.open(url,"_system");
+  });
+}, false);
